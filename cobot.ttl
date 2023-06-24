@@ -1,0 +1,940 @@
+@prefix : <http://data.ifs.tuwien.ac.at/star2/ontology#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix star: <http://data.ifs.tuwien.ac.at/star/ontology#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@base <http://data.ifs.tuwien.ac.at/star2/ontology> .
+
+<http://data.ifs.tuwien.ac.at/star2/ontology> rdf:type owl:Ontology ;
+                                               owl:versionIRI <http://data.ifs.tuwien.ac.at/star2/ontology/version/2.0.0> ;
+                                               cc:attributionURL "http://data.ifs.tuwien.ac.at/star2/ontology"^^xsd:anyURI ;
+                                               dct:contributor "Fajar J. Ekaputra" ,
+                                                               "Marta Sabou" ,
+                                                               "Tudor B. Ionescu" ;
+                                               dct:created "2019-07-30T12:00:00"^^xsd:dateTime ;
+                                               dct:creator "Kevin Haller" ;
+                                               dct:description "COBOT Ontology aims to cover the domain of smart factoring from production plans to resources such as robots and their equipment, specializing on collaborative robots."@en ;
+                                               dct:title "Collaborative RoBOT (COBOT) Ontology"@en ;
+                                               bibo:status <http://purl.org/ontology/bibo/status/draft> ;
+                                               vann:preferredNamespacePrefix "cobot" ;
+                                               vann:preferredNamespaceUri "http://data.ifs.tuwien.ac.at/star2/ontology#"^^xsd:anyURI .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#attributionURL
+cc:attributionURL rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+dct:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+dct:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dct:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dct:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dct:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/status
+bibo:status rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#appliesSkill
+:appliesSkill rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <http://purl.org/co/itemContent> ;
+              owl:inverseOf :isAppliedIn ;
+              rdfs:domain :ProductionStep ;
+              rdfs:range :Skill ;
+              rdfs:comment "This production step applies the given skill."@en ;
+              rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+              rdfs:label "applies skill"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#containsParameterValue
+:containsParameterValue rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf <http://purl.org/co/element> ;
+                        rdf:type owl:FunctionalProperty ;
+                        rdfs:domain :ParameterList ;
+                        rdfs:range owl:Thing ;
+                        owl:propertyChainAxiom ( :hasParameter
+                                                 :hasParameterValue
+                                               ) ;
+                        rdfs:comment "This parameter list contains the given parameter value."@en ;
+                        rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                        rdfs:label "contains parameter value"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#containsPart
+:containsPart rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <http://purl.org/co/item> ;
+              rdfs:domain :BOM ;
+              rdfs:range :Part ;
+              rdfs:comment "This 'Bill of Materials' contains the given part."@en ;
+              rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+              rdfs:label "contains part"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#containsProduct
+:containsProduct rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <http://purl.org/co/element> ;
+                 owl:inverseOf :isPartOfBOM ;
+                 rdfs:domain :BOM ;
+                 rdfs:range :Product ;
+                 owl:propertyChainAxiom ( :containsPart
+                                          :isOfProduct
+                                        ) ;
+                 rdfs:comment "This 'Bill of Materials' contains the given product."@en ;
+                 rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                 rdfs:label "contains product"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#countryOfOrigin
+:countryOfOrigin rdf:type owl:ObjectProperty ;
+                 rdfs:domain :ResourceType ;
+                 rdfs:comment "This resource type is produced in the given country."@en ;
+                 rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                 rdfs:label "country of Origin"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#hasBOM
+:hasBOM rdf:type owl:ObjectProperty ;
+        owl:inverseOf :isBOMFor ;
+        rdf:type owl:InverseFunctionalProperty ;
+        rdfs:domain :Product ;
+        rdfs:range :BOM ;
+        rdfs:comment "This product has the given 'Bill of Materials'."@en ;
+        rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+        rdfs:label "has 'Bill of Materials'"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#hasFirstParameter
+:hasFirstParameter rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hasParameter ,
+                                      <http://purl.org/co/firstItem> ;
+                   rdfs:domain :ParameterList ;
+                   rdfs:range :Parameter ;
+                   rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                   rdfs:label "has first parameter"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#hasFirstProductionStep
+:hasFirstProductionStep rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :hasProductionStep ,
+                                           <http://purl.org/co/firstItem> ;
+                        rdfs:domain :ProductionPlan ;
+                        rdfs:range :ProductionStep ;
+                        rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                        rdfs:label "has first production step"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#hasFirstSkillStep
+:hasFirstSkillStep rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hasSkillStep ,
+                                      <http://purl.org/co/firstItem> ;
+                   rdfs:domain :Skill ;
+                   rdfs:range :SkillStep ;
+                   rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                   rdfs:label "has first skill step"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#hasImageDepiction
+:hasImageDepiction rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Resource ;
+                   rdfs:range dctype:Image ;
+                   rdfs:comment "The given image is a depiction of this resource."@en ;
+                   rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                   rdfs:label "Image depiction"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#hasNextParameter
+:hasNextParameter rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf <http://purl.org/co/nextItem> ;
+                  rdfs:domain :Parameter ;
+                  rdfs:range :Parameter ;
+                  rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                  rdfs:label "has next parameter"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#hasNextProductionStep
+:hasNextProductionStep rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf <http://purl.org/co/nextItem> ;
+                       rdfs:domain :ProductionStep ;
+                       rdfs:range :ProductionStep ;
+                       rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                       rdfs:label "has next operation"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#hasNextStep
+:hasNextStep rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://purl.org/co/nextItem> ;
+             rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+             rdfs:label "has next step"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#hasParameter
+:hasParameter rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <http://purl.org/co/item> ;
+              rdfs:domain :ParameterList ;
+              rdfs:range :Parameter ;
+              owl:propertyChainAxiom ( :hasParameter
+                                       :hasNextParameter
+                                     ) ;
+              rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+              rdfs:label "has parameter"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#hasParameterList
+:hasParameterList rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( :ProductionStep
+                                              :SkillStep
+                                            )
+                              ] ;
+                  rdfs:range :ParameterList ;
+                  rdfs:comment "This production step has the given parameter list. An production step can only have one parameter list or none."@en ;
+                  rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                  rdfs:label "has parameter list"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#hasParameterValue
+:hasParameterValue rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <http://purl.org/co/itemContent> ;
+                   rdfs:domain :Parameter ;
+                   rdfs:range owl:Thing ;
+                   rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                   rdfs:label "has parameter value"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#hasProductionPlan
+:hasProductionPlan rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :isProductionPlanOf ;
+                   rdfs:domain :Product ;
+                   rdfs:range :ProductionPlan ;
+                   rdfs:comment "This product has the given production plan."@en ;
+                   rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                   rdfs:label "has production plan"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#hasProductionStep
+:hasProductionStep rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <http://purl.org/co/item> ;
+                   rdfs:domain :ProductionPlan ;
+                   rdfs:range :ProductionStep ;
+                   owl:propertyChainAxiom ( :hasProductionStep
+                                            :hasNextProductionStep
+                                          ) ;
+                   rdfs:comment "This production plan has the given production step."@en ;
+                   rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                   rdfs:label "has production step"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#hasResourceOfInterest
+:hasResourceOfInterest rdf:type owl:ObjectProperty ;
+                       owl:inverseOf :isOfInterestForProductionPlan ;
+                       rdfs:domain :ProductionPlan ;
+                       rdfs:range :Resource ;
+                       owl:propertyChainAxiom ( :needsSkill
+                                                :isSkillOf
+                                              ) ,
+                                              ( :needsSkill
+                                                :needsHandlingFunction
+                                              ) ;
+                       rdfs:comment <http://data.ifs.tuwien.ac.at/star2/ontology> ,
+                                    "The given resource could be of interest for this production plan. It could enable skills required in the production plan."@en ;
+                       rdfs:label "has resource of interest"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#hasSkillStep
+:hasSkillStep rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <http://purl.org/co/item> ;
+              rdfs:domain :Skill ;
+              rdfs:range :SkillStep ;
+              owl:propertyChainAxiom ( :hasSkillStep
+                                       :hasNextStep
+                                     ) ;
+              rdfs:comment "This skill has the given behavioural step."@en ;
+              rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+              rdfs:label "has skill step"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#implementedBy
+:implementedBy rdf:type owl:ObjectProperty ;
+               rdfs:range :SoftwareComponent ;
+               rdfs:comment "This concrete behaviour is implemented by given software component."@en ;
+               rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+               rdfs:label "implemented by"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#isAppliedIn
+:isAppliedIn rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://purl.org/co/itemContentOf> ;
+             rdfs:domain :Skill ;
+             rdfs:range :ProductionStep ;
+             rdfs:comment "This skill is applied in the given production step."@en ;
+             rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+             rdfs:label "is applied in"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#isBOMFor
+:isBOMFor rdf:type owl:ObjectProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :BOM ;
+          rdfs:range :Product ;
+          rdfs:comment "This is a 'Bill of Materials' for the given product."@en ;
+          rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+          rdfs:label "is 'Bill of Materials' for"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#isBasedOnDesignPattern
+:isBasedOnDesignPattern rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty ;
+                        owl:inverseOf :isFollowedBySWC ;
+                        rdfs:domain :SoftwareComponent ;
+                        rdfs:comment "This software component is based on the given design pattern."@en ;
+                        rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                        rdfs:label "is based on design pattern"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#isCompatibleWithActuatorType
+:isCompatibleWithActuatorType rdf:type owl:ObjectProperty ;
+                              owl:inverseOf :isCompatibleWithRobotType ;
+                              rdfs:domain :RobotType ;
+                              rdfs:range :EndEffectorType ;
+                              rdfs:comment "This robot is compatible with the given end effector."@en ;
+                              rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                              rdfs:label "is compatible with end effector type"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#isCompatibleWithRobotType
+:isCompatibleWithRobotType rdf:type owl:ObjectProperty ;
+                           rdfs:domain :EndEffectorType ;
+                           rdfs:range :RobotType ;
+                           rdfs:comment "This actuator is compatible with a given robot."@en ;
+                           rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                           rdfs:label "is compatible with robot type"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#isEquippedWithActuator
+:isEquippedWithActuator rdf:type owl:ObjectProperty ,
+                                 owl:InverseFunctionalProperty ;
+                        rdfs:domain :Robot ;
+                        rdfs:range :EndEffector ;
+                        rdfs:comment "This robot is equipped with the given actuator."@en ;
+                        rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                        rdfs:label "is equipped with"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#isFollowedBySWC
+:isFollowedBySWC rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :providesKnowledgeAbout ;
+                 rdfs:range :SoftwareComponent ;
+                 rdfs:comment "This design pattern is followed by the given software component."@en ;
+                 rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                 rdfs:label "is followed by software component"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#isHousing
+:isHousing rdf:type owl:ObjectProperty ;
+           owl:inverseOf :locatedIn ;
+           rdfs:domain :ProductionPlant ;
+           rdfs:range :Resource ;
+           rdfs:comment "This production plant is housing the given resource."@en ;
+           rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+           rdfs:label "is housing"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#isHousingActuator
+:isHousingActuator rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :isHousing ;
+                   rdfs:domain :ProductionPlant ;
+                   rdfs:range :EndEffector ;
+                   rdfs:comment "This production plant is housing the given end effector."@en ;
+                   rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                   rdfs:label "is housing actuator"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#isHousingRobot
+:isHousingRobot rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :isHousing ;
+                rdfs:domain :ProductionPlant ;
+                rdfs:range :Robot ;
+                rdfs:comment "This production plant is housing the given robot."@en ;
+                rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                rdfs:label "is housing robot"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#isInstanceOf
+:isInstanceOf rdf:type owl:ObjectProperty ;
+              rdfs:domain :Resource ;
+              rdfs:range :ResourceType ;
+              rdfs:comment "This resource is an instance of the given resource type."@en ;
+              rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+              rdfs:label "is instance of"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#isOfHandlingFunction
+:isOfHandlingFunction rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf <http://purl.org/co/itemContent> ;
+                      rdfs:domain :SkillStep ;
+                      rdfs:range :HandlingFunction ;
+                      rdfs:comment "The given handling function is performed in this step."@en ;
+                      rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                      rdfs:label "is of handling function"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#isOfInterestForProductionPlan
+:isOfInterestForProductionPlan rdf:type owl:ObjectProperty ;
+                               rdfs:domain :Resource ;
+                               rdfs:range :ProductionPlan ;
+                               rdfs:comment "This resource is of interest for the given production plan. It might enable skills that are required by the given production plan."@en ;
+                               rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                               rdfs:label "is of interest for production plan"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#isOfProduct
+:isOfProduct rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://purl.org/co/itemContent> ;
+             rdfs:domain :Part ;
+             rdfs:range :Product ;
+             rdfs:comment "This part is of the given product."@en ;
+             rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+             rdfs:label "is of product"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#isPartOfBOM
+:isPartOfBOM rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://purl.org/co/elementOf> ;
+             rdfs:domain :Product ;
+             rdfs:range :BOM ;
+             rdfs:comment "This product is part of the given 'Bill of Materials'."@en ;
+             rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+             rdfs:label "is part of 'Bill of Materials'"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#isProductionPlanOf
+:isProductionPlanOf rdf:type owl:ObjectProperty ;
+                    rdfs:domain :ProductionPlan ;
+                    rdfs:range :Product ;
+                    rdfs:comment "This production plan is concerned with the production of the given product."@en ;
+                    rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                    rdfs:label "is production plan of"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#isRequiredInSkill
+:isRequiredInSkill rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :needsHandlingFunction ;
+                   rdfs:domain :HandlingFunction ;
+                   rdfs:range :Skill ;
+                   rdfs:comment "This handling function is used in the given skill."@en ;
+                   rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                   rdfs:label "is needed in skill"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#isSkillOf
+:isSkillOf rdf:type owl:ObjectProperty ;
+           rdfs:domain :Skill ;
+           rdfs:comment "The given hardware is capable of performing this skill."@en ;
+           rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+           rdfs:label "is skill of"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#isUsedInProductionPlan
+:isUsedInProductionPlan rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf <http://purl.org/co/elementOf> ;
+                        owl:inverseOf :needsSkill ;
+                        rdfs:domain :Skill ;
+                        rdfs:range :ProductionPlan ;
+                        rdfs:comment "This skill is used in the given production plan."@en ;
+                        rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                        rdfs:label "is used in production plan"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#locatedIn
+:locatedIn rdf:type owl:ObjectProperty ;
+           rdfs:domain :Resource ;
+           rdfs:range :ProductionPlant ;
+           rdfs:comment "A Resource is located in the given production plant."@en ;
+           rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+           rdfs:label "located in"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#needsHandlingFunction
+:needsHandlingFunction rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf <http://purl.org/co/element> ;
+                       rdfs:domain :Skill ;
+                       rdfs:range :HandlingFunction ;
+                       owl:propertyChainAxiom ( :hasSkillStep
+                                                :isOfHandlingFunction
+                                              ) ;
+                       rdfs:comment "This skill needs the given handling function."@en ;
+                       rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                       rdfs:label "needs handling function"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#needsSkill
+:needsSkill rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://purl.org/co/element> ;
+            rdfs:domain :ProductionPlan ;
+            rdfs:range :Skill ;
+            owl:propertyChainAxiom ( :hasProductionStep
+                                     :appliesSkill
+                                   ) ;
+            rdfs:comment "This production plan needs the given skill."@en ;
+            rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+            rdfs:label "needs skill"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#offers
+:offers rdf:type owl:ObjectProperty ;
+        rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+        rdfs:label "offers"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#offersHandlingFunction
+:offersHandlingFunction rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :offers ;
+                        rdfs:range :HandlingFunction ;
+                        owl:propertyChainAxiom ( :isEquippedWithActuator
+                                                 :offersHandlingFunction
+                                               ) ,
+                                               ( :isInstanceOf
+                                                 :offersHandlingFunction
+                                               ) ;
+                        rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                        rdfs:label "offers handling function"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#offersSkill
+:offersSkill rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :offers ;
+             rdfs:range :Skill ;
+             owl:propertyChainAxiom ( :isEquippedWithActuator
+                                      :offersSkill
+                                    ) ,
+                                    ( :isInstanceOf
+                                      :offersSkill
+                                    ) ;
+             rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+             rdfs:label "offers skill"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#providesKnowledgeAbout
+:providesKnowledgeAbout rdf:type owl:ObjectProperty ;
+                        rdfs:domain :KnowledgeArtifact ;
+                        rdfs:range :Resource ;
+                        rdfs:comment "This knowledge artifact can explain (certain aspects of) the given resource."@en ;
+                        rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                        rdfs:label "provides knowledge about"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#reliesOnSWC
+:reliesOnSWC rdf:type owl:ObjectProperty ,
+                      owl:IrreflexiveProperty ;
+             rdfs:domain :SoftwareComponent ;
+             rdfs:range :SoftwareComponent ;
+             rdfs:comment "Expresses that this software component relies on the given one in order to be executed properly."@en ;
+             rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+             rdfs:label "relies on software component"@en .
+
+
+###  http://purl.org/co/element
+<http://purl.org/co/element> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/co/elementOf
+<http://purl.org/co/elementOf> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/co/firstItem
+<http://purl.org/co/firstItem> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/co/item
+<http://purl.org/co/item> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/co/itemContent
+<http://purl.org/co/itemContent> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/co/itemContentOf
+<http://purl.org/co/itemContentOf> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/co/nextItem
+<http://purl.org/co/nextItem> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#hasDegreesOfFreedom
+:hasDegreesOfFreedom rdf:type owl:DatatypeProperty ;
+                     rdfs:range xsd:int ;
+                     rdfs:comment "The degree of freedom (DOF) of a mechanical system is the number of independent parameters that define its configuration. It is the number of parameters that determine the state of a physical system and is important to the analysis of systems of bodies in mechanical engineering, aeronautical engineering, robotics, and structural engineering. The position and orientation of a rigid body in space is defined by three components of translation and three components of rotation, which means that it has six degrees of freedom."@en ;
+                     rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                     rdfs:label "Degrees of Freedom"@en ;
+                     rdfs:seeAlso <https://dbpedia.org/resource/Degrees_of_freedom_(mechanics)> .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#hasHandlingPayload
+:hasHandlingPayload rdf:type owl:DatatypeProperty ;
+                    rdfs:comment "Payload is the maximum weight a resource such a robot arm can lift (e.g. 5kg)."@en ;
+                    rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                    rdfs:label "Handling Payload"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#hasReach
+:hasReach rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Robot ;
+          rdfs:comment "Maximum distance a robot can reach."@en ;
+          rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+          rdfs:label "Reach"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#hasRepeatability
+:hasRepeatability rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                  rdfs:label "Repeatability"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#inProductQuantityOf
+:inProductQuantityOf rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Part ;
+                     rdfs:comment "Specifies the quantity of this product part."@en ;
+                     rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                     rdfs:label "in a quantity of"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://data.ifs.tuwien.ac.at/star/ontology#ContextElement
+star:ContextElement rdf:type owl:Class ;
+                    rdfs:subClassOf :KnowledgeArtifact .
+
+
+###  http://data.ifs.tuwien.ac.at/star/ontology#ReferenceDocument
+star:ReferenceDocument rdf:type owl:Class ;
+                       rdfs:subClassOf :KnowledgeArtifact .
+
+
+###  http://data.ifs.tuwien.ac.at/star/ontology#SoftwareArchitectureDescription
+star:SoftwareArchitectureDescription rdf:type owl:Class ;
+                                     rdfs:subClassOf :KnowledgeArtifact .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#BOM
+:BOM rdf:type owl:Class ;
+     rdfs:subClassOf <http://purl.org/co/Bag> ;
+     owl:disjointWith :Resource ;
+     rdfs:comment <http://data.ifs.tuwien.ac.at/star2/ontology> ,
+                  "A bill of materials for assembling a certain product."@en ;
+     rdfs:label "Bill of Materials"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#Cobot
+:Cobot rdf:type owl:Class ;
+       rdfs:subClassOf :Robot ;
+       rdfs:comment "Cobots, or collaborative robots, are robots intended for direct human robot interaction within a shared space, or where humans and robots are in close proximity. Cobot applications contrast with traditional industrial robot applications in which robots are isolated from human contact."@en ;
+       rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+       rdfs:label "Collaborative Robot"@en ;
+       rdfs:seeAlso <http://dbpedia.org/resource/Cobot> .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#EndEffector
+:EndEffector rdf:type owl:Class ;
+             rdfs:subClassOf :Hardware ;
+             rdfs:comment """An actual instance of an end effector (in contrary to an end effector type).
+
+An end effector is the device at the end of a robotic arm, designed to interact with the environment. The exact nature of this device depends on the application of the robot.
+
+In the strict definition, which originates from serial robotic manipulators, the end effector means the last link (or end) of the robot. At this endpoint, the tools are attached. In a wider sense, an end effector can be seen as the part of a robot that interacts with the work environment. This does not refer to the wheels of a mobile robot or the feet of a humanoid robot, which are not end effectors but rather part of a robot's mobility."""@en ;
+             rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+             rdfs:label "End Effector"@en ;
+             rdfs:seeAlso <http://dbpedia.org/resource/Robot_end_effector> .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#EndEffectorType
+:EndEffectorType rdf:type owl:Class ;
+                 rdfs:subClassOf :HardwareType ;
+                 rdfs:comment """An end effector is the device at the end of a robotic arm, designed to interact with the environment. The exact nature of this device depends on the application of the robot.
+
+In the strict definition, which originates from serial robotic manipulators, the end effector means the last link (or end) of the robot. At this endpoint, the tools are attached. In a wider sense, an end effector can be seen as the part of a robot that interacts with the work environment. This does not refer to the wheels of a mobile robot or the feet of a humanoid robot, which are not end effectors but rather part of a robot's mobility."""@en ;
+                 rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                 rdfs:label "End Effector Type"@en ;
+                 rdfs:seeAlso <http://dbpedia.org/resource/Robot_end_effector> .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#HandlingFunction
+:HandlingFunction rdf:type owl:Class ;
+                  owl:disjointWith :Product ,
+                                   :Skill ;
+                  rdfs:comment "A handling function is an operation without a purpose in itself."@en ;
+                  rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                  rdfs:label "Handling function"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#Hardware
+:Hardware rdf:type owl:Class ;
+          rdfs:subClassOf :Resource ;
+          rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+          rdfs:label "Hardware"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#HardwareType
+:HardwareType rdf:type owl:Class ;
+              rdfs:subClassOf :ResourceType ;
+              rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+              rdfs:label "Hardware Type"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#KnowledgeArtifact
+:KnowledgeArtifact rdf:type owl:Class ;
+                   owl:disjointWith :Product ,
+                                    :Resource ;
+                   rdfs:comment "A knowledge artifact is representing expertise in as well as guidelines for CPPS."@en ;
+                   rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                   rdfs:label "Knowledge Artifact"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#Parameter
+:Parameter rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.org/co/ListItem> ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasParameterValue ;
+                             owl:cardinality "1"^^xsd:nonNegativeInteger
+                           ] ;
+           owl:disjointWith :Product ,
+                            :Resource ;
+           rdfs:comment <http://data.ifs.tuwien.ac.at/star2/ontology> ,
+                        "A parameter of an operation."@en ;
+           rdfs:label "Parameter"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#ParameterList
+:ParameterList rdf:type owl:Class ;
+               rdfs:subClassOf <http://purl.org/co/List> ;
+               owl:disjointWith :ProductionPlan ,
+                                :Resource ;
+               rdfs:comment "An ordered list of parameters."@en ;
+               rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+               rdfs:label "Parameter list"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#Part
+:Part rdf:type owl:Class ;
+      rdfs:subClassOf <http://purl.org/co/Item> ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :isOfProduct ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :Product
+                      ] ;
+      owl:disjointWith :Resource ;
+      rdfs:comment "A product as part of a 'Bill of Materials' in a certain quantity."@en ;
+      rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+      rdfs:label "Part"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#Product
+:Product rdf:type owl:Class ;
+         owl:disjointWith :ProductionPlan ,
+                          :ProductionStep ,
+                          :Skill ;
+         rdfs:comment "A product refers to the final produced goods in a production system as well as to the produced artefact in one of its intermediary stages."@en ;
+         rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+         rdfs:label "Product"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#ProductionPlan
+:ProductionPlan rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.org/co/List> ;
+                owl:disjointWith :Resource ;
+                rdfs:comment "A production plan is an ordered list of operations."@en ;
+                rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                rdfs:label "Production plan"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#ProductionPlant
+:ProductionPlant rdf:type owl:Class ;
+                 rdfs:comment "A factory or building where goods are manufactured."@en ;
+                 rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                 rdfs:label "Production Plant"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#ProductionStep
+:ProductionStep rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.org/co/ListItem> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :appliesSkill ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :ProductionStep
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasParameterList ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :ProductionStep
+                                ] ;
+                owl:disjointWith :Resource ;
+                rdfs:comment "A production step is the application of a skill considering a certain number of parameters. e.g. assemble a given product on another given product."@en ;
+                rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                rdfs:label "Production step"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#Resource
+:Resource rdf:type owl:Class ;
+          owl:disjointWith :ResourceType ,
+                           :Skill ;
+          rdfs:comment "Production resources are entities involved in production that provide functions to production processes. Resources include both handling systems (e.g., robots or humans) and software entities (e.g. SCADA systems), and are typically organized hierarchically into a plant topology."@en ;
+          rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+          rdfs:label "Resource"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#ResourceType
+:ResourceType rdf:type owl:Class ;
+              rdfs:comment "Production resources are entities involved in production that provide functions to production processes. Resources include both handling systems (e.g., robots or humans) and software entities (e.g. SCADA systems), and are typically organized hierarchically into a plant topology."@en ;
+              rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+              rdfs:label "Resource Type"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#Robot
+:Robot rdf:type owl:Class ;
+       rdfs:subClassOf :Hardware ;
+       rdfs:comment """An actual instance of a robot (in contrary to a robot type). 
+
+A robot is a mechanical or virtual artificial agent, usually an electromechanical machine that is guided by a computer program or electronic circuitry, and thus a type of an embedded system."""@en ;
+       rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+       rdfs:label "Robot"@en ;
+       rdfs:seeAlso <http://dbpedia.org/resource/Robot> .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#RobotType
+:RobotType rdf:type owl:Class ;
+           rdfs:subClassOf :HardwareType ;
+           rdfs:comment "A robot is a mechanical or virtual artificial agent, usually an electromechanical machine that is guided by a computer program or electronic circuitry, and thus a type of an embedded system."@en ;
+           rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+           rdfs:label "Robot Type"@en ;
+           rdfs:seeAlso <http://dbpedia.org/resource/Robot> .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#Sensor
+:Sensor rdf:type owl:Class ;
+        rdfs:subClassOf :Hardware ;
+        rdfs:comment "An actual insatnce of a sensor. A sensor is a device, module, machine, or subsystem whose purpose is to detect events or changes in its environment."@en ;
+        rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+        rdfs:label "Sensor"@en ;
+        rdfs:seeAlso <http://dbpedia.org/resource/Sensor> .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#SensorType
+:SensorType rdf:type owl:Class ;
+            rdfs:subClassOf :HardwareType ;
+            rdfs:comment "A sensor is a device, module, machine, or subsystem whose purpose is to detect events or changes in its environment."@en ;
+            rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+            rdfs:label "Sensor Type"@en ;
+            rdfs:seeAlso <http://dbpedia.org/resource/Sensor> .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#Skill
+:Skill rdf:type owl:Class ;
+       rdfs:subClassOf <http://purl.org/co/List> ;
+       rdfs:comment "A skill is a generic capability that is useful in a production setting (e.g. welding). A skill consists of one or more steps executing a handling function."@en ;
+       rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+       rdfs:label "Skill"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#SkillStep
+:SkillStep rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.org/co/ListItem> ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :isOfHandlingFunction ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :HandlingFunction
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasParameterList ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :ParameterList
+                           ] ;
+           rdfs:comment "A step of certain behaviour executed in a skill given specific parameters."@en ;
+           rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+           rdfs:label "Step"@en .
+
+
+###  http://data.ifs.tuwien.ac.at/star2/ontology#SoftwareComponent
+:SoftwareComponent rdf:type owl:Class ;
+                   rdfs:subClassOf :Resource ;
+                   rdfs:comment "A resource that is a software component."@en ;
+                   rdfs:isDefinedBy <http://data.ifs.tuwien.ac.at/star2/ontology> ;
+                   rdfs:label "Software Component"@en .
+
+
+###  http://purl.org/co/Bag
+<http://purl.org/co/Bag> rdf:type owl:Class .
+
+
+###  http://purl.org/co/Item
+<http://purl.org/co/Item> rdf:type owl:Class .
+
+
+###  http://purl.org/co/List
+<http://purl.org/co/List> rdf:type owl:Class .
+
+
+###  http://purl.org/co/ListItem
+<http://purl.org/co/ListItem> rdf:type owl:Class .
+
+
+###  http://purl.org/dc/dcmitype/Image
+dctype:Image rdf:type owl:Class .
+
+
+###  http://www.w3.org/2002/07/owl#ObjectProperty
+owl:ObjectProperty rdf:type owl:Class .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+foaf:Person rdfs:isDefinedBy foaf: .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
