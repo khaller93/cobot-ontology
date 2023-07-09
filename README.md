@@ -42,3 +42,14 @@ Franka Emika `Robot` at the pilot factory can perform `Handling Functions` such 
 not sufficient to perform the aforementioned pick & place `Skill`. The `Robot` must be equipped with an `End Effector`
 that provides pick and place among other `Handling Functions`. `Grippers` (e.g. Robotiq 2F-85) and vacuum systems
 (e.g. Robotiq Airpick) are examples for such `End Effectors`.
+
+## Citation
+
+```bibtex
+@masterthesis{haller23,
+  title={Semantics-Based Exploratory Search on Manufacturing Knowledge},
+  author={Kevin Haller},
+  year={2023},
+  school={TU Wien}
+}
+```
