@@ -21,7 +21,7 @@ dat:coboticsworld-cobots {
         pilot:countryOfOrigin <http://dbpedia.org/resource/Switzerland> ;
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/abb-irb-14050-yumi/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/ABB-IRB-14050-YUMI-400x400.png> .
+        foaf:depiction <images/abb-irb-14050-yumi.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/acutronic-robotics-mara> a pilot:RobotType ;
         rdfs:label "ACUTRONIC ROBOTICS MARA"@en ;
@@ -30,7 +30,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/acutronic-robotics-mara/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/acutronic-robotics-mara/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/Acutronic-MARA-400x400.png> .
+        foaf:depiction <images/acutronic-robotics-mara.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/aubo-i10> a pilot:RobotType ;
         rdfs:label "AUBO I10"@en ;
@@ -38,7 +38,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/aubo-i10/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/aubo-i10/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/AUBO-I10-400x400.png> .
+        foaf:depiction <images/aubo-i10.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/aubo-i16> a pilot:RobotType ;
         rdfs:label "AUBO I16"@en ;
@@ -46,7 +46,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/aubo-i16/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/aubo-i16/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2020/04/AUBO-I16-400x400.png> .
+        foaf:depiction <images/aubo-i16.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/aubo-i3> a pilot:RobotType ;
         rdfs:label "AUBO I3"@en ;
@@ -54,7 +54,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/aubo-i3/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/aubo-i3/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/AUBO-I3-400x400.png> .
+        foaf:depiction <images/aubo-i3.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/aubo-i5> a pilot:RobotType ;
         rdfs:label "AUBO I5"@en ;
@@ -62,7 +62,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/aubo-i5/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/aubo-i5/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/AUBO-I5-400x400.png> .
+        foaf:depiction <images/aubo-i5.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/aubo-i7> a pilot:RobotType ;
         rdfs:label "AUBO I7"@en ;
@@ -70,14 +70,14 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/aubo-i7/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/aubo-i7/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/AUBO-I7-400x400.png> .
+        foaf:depiction <images/aubo-i7.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/automata-eva> a pilot:RobotType ;
         rdfs:label "AUTOMATA EVA"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/United_Kingdom> ;
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/automata-eva/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/AUTOMATA-EVA2-400X400.png> .
+        foaf:depiction <images/automata-eva.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/bosch-apas> a pilot:RobotType ;
         rdfs:label "BOSCH APAS"@en ;
@@ -85,7 +85,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/bosch-apas/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/bosch-apas/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/BOSCH-APAS-400x400.png> .
+        foaf:depiction <images/bosch-apas.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/carbon-robotics-katia> a pilot:RobotType ;
         rdfs:label "CARBON ROBOTICS KATIA"@en ;
@@ -94,7 +94,7 @@ dat:coboticsworld-cobots {
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/carbon-robotics-katia/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/carbon-robotics-katia/reach/quantity> ;
         pilot:hasRepeatability <http://data.ifs.tuwien.ac.at/star2/instance/robot/carbon-robotics-katia/repeatability/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/CARBON-ROBOTICS-KATIA-400x400-1.png> .
+        foaf:depiction <images/carbon-robotics-katia.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/comau-aura> a pilot:RobotType ;
         rdfs:label "COMAU AURA"@en ;
@@ -102,7 +102,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/comau-aura/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/comau-aura/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/COMAU-AURA-400x400.png> .
+        foaf:depiction <images/comau-aura.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/comau-e.do-6-axes> a pilot:RobotType ;
         rdfs:label "COMAU E.DO 6 AXES"@en ;
@@ -111,14 +111,14 @@ dat:coboticsworld-cobots {
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/comau-e.do-6-axes/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/comau-e.do-6-axes/reach/quantity> ;
         pilot:hasRepeatability <http://data.ifs.tuwien.ac.at/star2/instance/robot/comau-e.do-6-axes/repeatability/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/COMAU-E.DO-6-AXES-400x400.png> .
+        foaf:depiction <images/comau-e.do-6-axes.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/denso-cobotta> a pilot:RobotType ;
         rdfs:label "DENSO COBOTTA"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/Japan> ;
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/denso-cobotta/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/DENSO-COBOTTA-400x400.png> .
+        foaf:depiction <images/denso-cobotta.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/dlr-sara> a pilot:RobotType ;
         rdfs:label "DLR SARA"@en ;
@@ -126,7 +126,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/dlr-sara/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/dlr-sara/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/DLR-SARA-400x400.png> .
+        foaf:depiction <images/dlr-sara.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/dobot-cr6-5> a pilot:RobotType ;
         rdfs:label "DOBOT CR6-5"@en ;
@@ -134,28 +134,28 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/dobot-cr6-5/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/dobot-cr6-5/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/06/DOBOT-CR6-400x400.png> .
+        foaf:depiction <images/dobot-cr6-5.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/dobot-m1> a pilot:RobotType ;
         rdfs:label "DOBOT M1"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/China> ;
         pilot:hasDegreesOfFreedom "4"^^xsd:int ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/dobot-m1/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/03/DOBOT-M1-400x400.png> .
+        foaf:depiction <images/dobot-m1.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/dobot-magician> a pilot:RobotType ;
         rdfs:label "DOBOT MAGICIAN"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/China> ;
         pilot:hasDegreesOfFreedom "4"^^xsd:int ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/dobot-magician/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/03/DOBOT-MAGICIAN-400x400.png> .
+        foaf:depiction <images/dobot-magician.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/dobot-magician-lite> a pilot:RobotType ;
         rdfs:label "DOBOT MAGICIAN LITE"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/China> ;
         pilot:hasDegreesOfFreedom "4"^^xsd:int ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/dobot-magician-lite/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2020/04/DOBOT-MAGICIAN-LITE-400x400.png> .
+        foaf:depiction <images/dobot-magician-lite.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/doosan-m0609> a pilot:RobotType ;
         rdfs:label "DOOSAN M0609"@en ;
@@ -163,7 +163,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/doosan-m0609/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/doosan-m0609/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/DOOSAN-M0609-400x400.png> .
+        foaf:depiction <images/doosan-m0609.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/doosan-m0617> a pilot:RobotType ;
         rdfs:label "DOOSAN M0617"@en ;
@@ -171,7 +171,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/doosan-m0617/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/doosan-m0617/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/DOOSAN-M0617-400x400.png> .
+        foaf:depiction <images/doosan-m0617.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/doosan-m1013> a pilot:RobotType ;
         rdfs:label "DOOSAN M1013"@en ;
@@ -179,7 +179,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/doosan-m1013/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/doosan-m1013/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/DOOSAN-M1013-400x400.png> .
+        foaf:depiction <images/doosan-m1013.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/doosan-m1509> a pilot:RobotType ;
         rdfs:label "DOOSAN M1509"@en ;
@@ -187,7 +187,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/doosan-m1509/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/doosan-m1509/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/DOOSAN-M1509-400x400.png> .
+        foaf:depiction <images/doosan-m1509.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/elephant-robotics-catbot-s3> a pilot:RobotType ;
         rdfs:label "ELEPHANT ROBOTICS CATBOT S3"@en ;
@@ -195,7 +195,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/elephant-robotics-catbot-s3/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/elephant-robotics-catbot-s3/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/ELEPHANT-CATBOT-S3-400x400.png> .
+        foaf:depiction <images/elephant-robotics-catbot-s3.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/elephant-robotics-panda-10> a pilot:RobotType ;
         rdfs:label "ELEPHANT ROBOTICS PANDA 10"@en ;
@@ -203,7 +203,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/elephant-robotics-panda-10/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/elephant-robotics-panda-10/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2020/01/ELEPHANT-PANDA-10-400x400.png> .
+        foaf:depiction <images/elephant-robotics-panda-10.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/elephant-robotics-panda-3> a pilot:RobotType ;
         rdfs:label "ELEPHANT ROBOTICS PANDA 3"@en ;
@@ -211,7 +211,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/elephant-robotics-panda-3/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/elephant-robotics-panda-3/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/05/ELEPHANT-PANDA-3-400x400.png> .
+        foaf:depiction <images/elephant-robotics-panda-3.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/elephant-robotics-panda-5> a pilot:RobotType ;
         rdfs:label "ELEPHANT ROBOTICS PANDA 5"@en ;
@@ -219,7 +219,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/elephant-robotics-panda-5/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/elephant-robotics-panda-5/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/05/ELEPHANT-PANDA-5-400x400.png> .
+        foaf:depiction <images/elephant-robotics-panda-5.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/elephant-robotics-s5> a pilot:RobotType ;
         rdfs:label "ELEPHANT ROBOTICS S5"@en ;
@@ -227,7 +227,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/elephant-robotics-s5/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/elephant-robotics-s5/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/ELEPHANT-ROBOTICS-S5-400x400.png> .
+        foaf:depiction <images/elephant-robotics-s5.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/elibot-ec63> a pilot:RobotType ;
         rdfs:label "ELIBOT EC63"@en ;
@@ -235,7 +235,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/elibot-ec63/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/elibot-ec63/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/03/ELIBOT-EC63-400x400.png> .
+        foaf:depiction <images/elibot-ec63.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/elibot-ec66> a pilot:RobotType ;
         rdfs:label "ELIBOT EC66"@en ;
@@ -243,7 +243,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/elibot-ec66/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/elibot-ec66/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/03/ELIBOT-EC66-400x400.png> .
+        foaf:depiction <images/elibot-ec66.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/elibot-ec75> a pilot:RobotType ;
         rdfs:label "ELIBOT EC75"@en ;
@@ -251,7 +251,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/elibot-ec75/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/elibot-ec75/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/03/ELIBOT-EC75-400x400.png> .
+        foaf:depiction <images/elibot-ec75.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/esi-canarm-15> a pilot:RobotType ;
         rdfs:label "ESI CANARM 15"@en ;
@@ -259,7 +259,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/esi-canarm-15/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/esi-canarm-15/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/ESI-CANARM-15-400x400.png> .
+        foaf:depiction <images/esi-canarm-15.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/esi-canarm-7> a pilot:RobotType ;
         rdfs:label "ESI CANARM 7"@en ;
@@ -267,7 +267,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/esi-canarm-7/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/esi-canarm-7/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/ESI-CANARM-7-400x400.png> .
+        foaf:depiction <images/esi-canarm-7.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/f&p-personal-robotics-prob-2r-24v> a pilot:RobotType ;
         rdfs:label "F&P PERSONAL ROBOTICS PROB 2R 24V"@en ;
@@ -275,7 +275,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/f&p-personal-robotics-prob-2r-24v/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/f&p-personal-robotics-prob-2r-24v/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/FP-Personal-Robotics-PROB-2R-400x400.png> .
+        foaf:depiction <images/fap-personal-robotics-prob-2r-24v.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/f&p-personal-robotics-prob-2r-48v> a pilot:RobotType ;
         rdfs:label "F&P PERSONAL ROBOTICS PROB 2R 48V"@en ;
@@ -283,7 +283,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/f&p-personal-robotics-prob-2r-48v/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/f&p-personal-robotics-prob-2r-48v/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/FP-Personal-Robotics-PROB-2R-48-400x400.png> .
+        foaf:depiction <images/fap-personal-robotics-prob-2r-48v> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-cr14ial> a pilot:RobotType ;
         rdfs:label "FANUC CR14IAL"@en ;
@@ -291,7 +291,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-cr14ial/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-cr14ial/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/04/FANUC-CR4iAL-400x400.jpg> .
+        foaf:depiction <images/fanuc-cr14ial.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-cr15ia> a pilot:RobotType ;
         rdfs:label "FANUC CR15IA"@en ;
@@ -299,7 +299,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-cr15ia/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-cr15ia/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/FANUC-CR15iA-400x400.png> .
+        foaf:depiction <images/fanuc-cr15ia.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-cr35ia> a pilot:RobotType ;
         rdfs:label "FANUC CR35IA"@en ;
@@ -307,7 +307,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-cr35ia/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-cr35ia/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/FANUC-CR35iA-400x400.png> .
+        foaf:depiction <images/fanuc-cr35ia.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-cr4ia> a pilot:RobotType ;
         rdfs:label "FANUC CR4IA"@en ;
@@ -315,7 +315,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-cr4ia/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-cr4ia/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/FANUC-CR4iA-400x400.png> .
+        foaf:depiction <images/fanuc-cr4ia.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-cr7ia> a pilot:RobotType ;
         rdfs:label "FANUC CR7IA"@en ;
@@ -323,7 +323,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-cr7ia/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-cr7ia/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/FANUC-CR7iA-400x400.png> .
+        foaf:depiction <images/fanuc-cr7ia.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-cr7ial> a pilot:RobotType ;
         rdfs:label "FANUC CR7IAL"@en ;
@@ -331,7 +331,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-cr7ial/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-cr7ial/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/FANUC-CR7LiA-400x400.png> .
+        foaf:depiction <images/fanuc-cr7ial.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-crx10ia> a pilot:RobotType ;
         rdfs:label "FANUC CRX10IA"@en ;
@@ -339,7 +339,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-crx10ia/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-crx10ia/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/12/FANUC-CRX10IA-400x400.png> .
+        foaf:depiction <images/fanuc-crx10ia.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-crx10ial> a pilot:RobotType ;
         rdfs:label "FANUC CRX10IAL"@en ;
@@ -347,19 +347,19 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-crx10ial/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/fanuc-crx10ial/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/12/FANUC-CRX10IAL-400x400.png> .
+        foaf:depiction <images/fanuc-crx10ial.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/festo-bioniccobot> a pilot:RobotType ;
         rdfs:label "FESTO BIONICCOBOT"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/Germany> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/FESTO-BIONICROBOT-400x400.png> .
+        foaf:depiction <images/festo-bioniccobot.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/flexiv-adaptive-robot> a pilot:RobotType ;
         rdfs:label "FLEXIV ADAPTIVE ROBOT"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/China>,
             <http://dbpedia.org/resource/United_States> ;
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/04/FLEXIV-RIZON-400x400.png> .
+        foaf:depiction <images/flexiv-adaptive-robot.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/franka-emika-robot> a pilot:RobotType ;
         rdfs:label "FRANKA EMIKA ROBOT"@en ;
@@ -367,7 +367,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/franka-emika-robot/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/franka-emika-robot/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/FRANKA-EMIKA-Panda-400x400.png> .
+        foaf:depiction <images/franka-emika-robot.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/haddington-dynamics-dexter> a pilot:RobotType ;
         rdfs:label "HADDINGTON DYNAMICS DEXTER"@en ;
@@ -375,7 +375,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/haddington-dynamics-dexter/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/haddington-dynamics-dexter/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/HADDINGTON-DYNAMICS-DEXTER-400x400.png> .
+        foaf:depiction <images/haddington-dynamics-dexter.jpeg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/hanwha-hcr12> a pilot:RobotType ;
         rdfs:label "HANWHA HCR12"@en ;
@@ -383,7 +383,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/hanwha-hcr12/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/hanwha-hcr12/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/HANWHA-HCR12-400x400png.png> .
+        foaf:depiction <images/hanwha-hcr12.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/hanwha-hcr3> a pilot:RobotType ;
         rdfs:label "HANWHA HCR3"@en ;
@@ -391,7 +391,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/hanwha-hcr3/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/hanwha-hcr3/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/HANWHA-HCR3-400x400.png> .
+        foaf:depiction <images/hanwha-hcr3.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/hanwha-hcr5> a pilot:RobotType ;
         rdfs:label "HANWHA HCR5"@en ;
@@ -399,7 +399,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/hanwha-hcr5/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/hanwha-hcr5/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/HANWHA-HCR5-400x400.png> .
+        foaf:depiction <images/hanwha-hcr5.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/han’s-robots-elfin-10> a pilot:RobotType ;
         rdfs:label "HAN’S ROBOTS ELFIN 10"@en ;
@@ -407,7 +407,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/han’s-robots-elfin-10/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/han’s-robots-elfin-10/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/HANS-ROBOT-ELFIN-10-NEW-400x400.png> .
+        foaf:depiction <images/hans-robots-elfin-10.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/han’s-robots-elfin-3> a pilot:RobotType ;
         rdfs:label "HAN’S ROBOTS ELFIN 3"@en ;
@@ -415,7 +415,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/han’s-robots-elfin-3/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/han’s-robots-elfin-3/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/HANS-ROBOT-ELFIN-3-NEW-400x400.png> .
+        foaf:depiction <images/hans-robots-elfin-3.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/han’s-robots-elfin-5> a pilot:RobotType ;
         rdfs:label "HAN’S ROBOTS ELFIN 5"@en ;
@@ -423,7 +423,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/han’s-robots-elfin-5/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/han’s-robots-elfin-5/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/HANS-ROBOT-ELFIN-5-NEW-400x400.png> .
+        foaf:depiction <images/hans-robots-elfin-5.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/hitbot-z-arm-2140c> a pilot:RobotType ;
         rdfs:label "HITBOT Z-ARM 2140C"@en ;
@@ -431,7 +431,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "4"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/hitbot-z-arm-2140c/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/hitbot-z-arm-2140c/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/04/HITBOT-Z-ARM-400x400.png> .
+        foaf:depiction <iamges/hitbot-z-arm-2140c.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/hitbot-z-arm-mini> a pilot:RobotType ;
         rdfs:label "HITBOT Z-ARM MINI"@en ;
@@ -439,7 +439,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "4"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/hitbot-z-arm-mini/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/hitbot-z-arm-mini/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/04/HITBOT-Z-ARM-MINI-400x400..png> .
+        foaf:depiction <images/hitbot-z-arm-mini.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/hrg-t5> a pilot:RobotType ;
         rdfs:label "HRG T5"@en ;
@@ -447,7 +447,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/hrg-t5/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/hrg-t5/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/HRG-T5-400x400.png> .
+        foaf:depiction <images/hrg-t5.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/hyundai-robot-yl012> a pilot:RobotType ;
         rdfs:label "HYUNDAI ROBOT YL012"@en ;
@@ -455,13 +455,13 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/hyundai-robot-yl012/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/hyundai-robot-yl012/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/12/HYUNDAI-ROBOT-YL012-400x400.png> .
+        foaf:depiction <images/hyundai-robot-yl012.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/inovo-robotics> a pilot:RobotType ;
         rdfs:label "INOVO ROBOTICS"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/United_Kingdom> ;
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/INOVO-ROBOTICS-2-400x400.png> .
+        foaf:depiction <iamges/inovo-robotics.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/isybot-syb3> a pilot:RobotType ;
         rdfs:label "ISYBOT SYB3"@en ;
@@ -469,7 +469,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "4"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/isybot-syb3/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/isybot-syb3/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/ISYBOT-SYB3-400x400.png> .
+        foaf:depiction <images/isybot-syb3.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/jaka-zu-12> a pilot:RobotType ;
         rdfs:label "JAKA ZU 12"@en ;
@@ -477,7 +477,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/jaka-zu-12/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/jaka-zu-12/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/03/JAKA-ZU-12-400x400.png> .
+        foaf:depiction <images/jaka-zu-12.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/jaka-zu-18> a pilot:RobotType ;
         rdfs:label "JAKA ZU 18"@en ;
@@ -485,7 +485,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/jaka-zu-18/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/jaka-zu-18/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/12/JAKA-ZU-18-400x400.png> .
+        foaf:depiction <images/jaka-zu-18.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/jaka-zu-3> a pilot:RobotType ;
         rdfs:label "JAKA ZU 3"@en ;
@@ -493,14 +493,14 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/jaka-zu-3/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/jaka-zu-3/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/03/JAKA-ZU-3-400x400.png> .
+        foaf:depiction <images/jaka-zu-3.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/jaka-zu-3m> a pilot:RobotType ;
         rdfs:label "JAKA ZU 3M"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/China> ;
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/jaka-zu-3m/payload/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/12/JAKA-ZU-3m-400x400.png> .
+        foaf:depiction <images/jaka-zu-3m.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/jaka-zu-7> a pilot:RobotType ;
         rdfs:label "JAKA ZU 7"@en ;
@@ -508,7 +508,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/jaka-zu-7/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/jaka-zu-7/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/03/JAKA-ZU-7-400x400.png> .
+        foaf:depiction <images/jaka-zu-7.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/kassow-robots-kr1205> a pilot:RobotType ;
         rdfs:label "KASSOW ROBOTS KR1205"@en ;
@@ -516,7 +516,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/kassow-robots-kr1205/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/kassow-robots-kr1205/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/KASSOW-ROBOTS-KR-1205-400x400.jpg> .
+        foaf:depiction <images/kassow-robots-kr1205.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/kassow-robots-kr1410> a pilot:RobotType ;
         rdfs:label "KASSOW ROBOTS KR1410"@en ;
@@ -524,7 +524,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/kassow-robots-kr1410/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/kassow-robots-kr1410/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2020/04/KASSOW-ROBOTS-KR1410-400x400.png> .
+        foaf:depiction <images/kassow-robots-kr1410.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/kassow-robots-kr1805> a pilot:RobotType ;
         rdfs:label "KASSOW ROBOTS KR1805"@en ;
@@ -532,7 +532,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/kassow-robots-kr1805/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/kassow-robots-kr1805/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/KASSOW-ROBOTS-KR1805-400x400.png> .
+        foaf:depiction <images/kassow-robots-kr1805.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/kassow-robots-kr810> a pilot:RobotType ;
         rdfs:label "KASSOW ROBOTS KR810"@en ;
@@ -540,69 +540,69 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/kassow-robots-kr810/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/kassow-robots-kr810/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/KASSOW-ROBOTS-KR810-400x400.png> .
+        foaf:depiction <images/kassow-robots-kr810.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/kawada-industries-nextage> a pilot:RobotType ;
         rdfs:label "KAWADA INDUSTRIES NEXTAGE"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/Japan> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/KAWADA-INDUSTRIES-NEXTAGE-400x400-1.png> .
+        foaf:depiction <images/kawada-industries-nextage.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/kawasaki-duaro-1> a pilot:RobotType ;
         rdfs:label "KAWASAKI DUARO 1"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/Japan> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/kawasaki-duaro-1/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/KAWASAKI-DUARO-1-400x400.png> .
+        foaf:depiction <images/kawasaki-duaro-1.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/kawasaki-duaro-2> a pilot:RobotType ;
         rdfs:label "KAWASAKI DUARO 2"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/Japan> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/kawasaki-duaro-2/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/KAWASAKI-DUARO-400x400.png> .
+        foaf:depiction <images/kawasaki-duaro-2.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/kinetic-systems-6-axes-robot> a pilot:RobotType ;
         rdfs:label "KINETIC SYSTEMS 6 AXES ROBOT"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/France> ;
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/03/KINETICS-SYSTEMS-Robot-6-Axes-400x400.png> .
+        foaf:depiction <images/kinetic-systems-6-axes-robot.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/kinetic-systems-robot-scara> a pilot:RobotType ;
         rdfs:label "KINETIC SYSTEMS ROBOT SCARA"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/France> ;
         pilot:hasDegreesOfFreedom "4"^^xsd:int ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/03/KINETICS-SYSTEMS-Robot-Scara-400x400.png> .
+        foaf:depiction <images/kinetic-systems-robot-scara.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/kinova-gen2> a pilot:RobotType ;
         rdfs:label "KINOVA GEN2"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/Canada> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2020/04/KINOVA-GEN2-400x400.png> .
+        foaf:depiction <images/kinova-gen2.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/kinova-gen3> a pilot:RobotType ;
         rdfs:label "KINOVA GEN3"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/Canada> ;
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/kinova-gen3/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/KINOVA-GEN3-400x400.png> .
+        foaf:depiction <images/kinova-gen3.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/kinova-gen3-light> a pilot:RobotType ;
         rdfs:label "KINOVA GEN3 LIGHT"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/Canada> ;
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/kinova-gen3-light/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2020/04/KINOVA-GEN3-LITE-400x400.png> .
+        foaf:depiction <images/kinova-gen3-light.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/kinova-jaco2> a pilot:RobotType ;
         rdfs:label "KINOVA JACO2"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/Canada> ;
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/kinova-jaco2/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/KINOVA-JACO2-400x400.png> .
+        foaf:depiction <images/kinova-jaco2.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/kinova-mico2> a pilot:RobotType ;
         rdfs:label "KINOVA MICO2"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/Canada> ;
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/kinova-mico2/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/KINOVA-MICO2-400x400.png> .
+        foaf:depiction <images/kinova-mico2.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/kuka-lbr-iisy> a pilot:RobotType ;
         rdfs:label "KUKA LBR IISY"@en ;
@@ -610,7 +610,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/kuka-lbr-iisy/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/kuka-lbr-iisy/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/KUKA-LBR-IISY-400x400.png> .
+        foaf:depiction <images/kuka-lbr-iisy.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/kuka-lbr-iiwa-14-r820> a pilot:RobotType ;
         rdfs:label "KUKA LBR IIWA 14 R820"@en ;
@@ -618,7 +618,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/kuka-lbr-iiwa-14-r820/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/kuka-lbr-iiwa-14-r820/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/KUKA-LBR-IIWA-14-R820-400x400.png> .
+        foaf:depiction <images/kuka-lbr-iiwa-14-r820.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/kuka-lbr-iiwa-7-r800> a pilot:RobotType ;
         rdfs:label "KUKA LBR IIWA 7 R800"@en ;
@@ -626,7 +626,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/kuka-lbr-iiwa-7-r800/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/kuka-lbr-iiwa-7-r800/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/KUKA-LBR-IIWA-7-R800-400x400-1.png> .
+        foaf:depiction <images/kuka-lbr-iiwa-7-r800.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/kuka-lwr> a pilot:RobotType ;
         rdfs:label "KUKA LWR"@en ;
@@ -634,7 +634,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/kuka-lwr/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/kuka-lwr/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/03/KUKA-LWR-400x400.png> .
+        foaf:depiction <images/kuka-lwr.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/life-robotics-coro> a pilot:RobotType ;
         rdfs:label "LIFE ROBOTICS CORO"@en ;
@@ -642,7 +642,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/life-robotics-coro/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/life-robotics-coro/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/LIFE-ROBOTICS-CORO-400x400.png> .
+        foaf:depiction <images/life-robotics-coro.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/mabi-speedy-12> a pilot:RobotType ;
         rdfs:label "MABI SPEEDY 12"@en ;
@@ -650,7 +650,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/mabi-speedy-12/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/mabi-speedy-12/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/MABI-SPEEDY-12-400x400.png> .
+        foaf:depiction <images/mabi-speedy-12.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/mabi-speedy-6> a pilot:RobotType ;
         rdfs:label "MABI SPEEDY 6"@en ;
@@ -658,7 +658,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/mabi-speedy-6/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/mabi-speedy-6/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/MABI-SPEEDY-6-400x400.png> .
+        foaf:depiction <images/mabi-speedy-6.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/megarobo-mrx-t4> a pilot:RobotType ;
         rdfs:label "MEGAROBO MRX-T4"@en ;
@@ -666,7 +666,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "4"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/megarobo-mrx-t4/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/megarobo-mrx-t4/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/03/MEGAROBO-400x400.png> .
+        foaf:depiction <images/megarobo-mrx-t4.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/mip-junior-200> a pilot:RobotType ;
         rdfs:label "MIP JUNIOR 200"@en ;
@@ -674,7 +674,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "4"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/mip-junior-200/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/mip-junior-200/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/MIP-JUNIOR-2-400x400.png> .
+        foaf:depiction <images/mip-junior-200.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/mip-junior-300> a pilot:RobotType ;
         rdfs:label "MIP JUNIOR 300"@en ;
@@ -682,13 +682,12 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "4"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/mip-junior-300/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/mip-junior-300/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/03/MIP-JUNIOR-300-400x400.png> .
+        foaf:depiction <images/mip-junior-300.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/modbot-5-or-6-dof-c> a pilot:RobotType ;
         rdfs:label "MODBOT 5 OR 6 DOF-C"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/United_States> ;
-        pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/modbot-5-or-6-dof-c/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/04/MODBOT-6-DOF-C-400x400.png> .
+        pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/modbot-5-or-6-dof-c/reach/quantity> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/mrk-system-kr-5-si> a pilot:RobotType ;
         rdfs:label "MRK SYSTEM KR 5 SI"@en ;
@@ -696,7 +695,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/mrk-system-kr-5-si/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/mrk-system-kr-5-si/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/MRK-SYSTEM-KR-5-SI-400x400.png> .
+        foaf:depiction <images/mrk-system-kr-5-si.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/nachi-cz-10> a pilot:RobotType ;
         rdfs:label "NACHI CZ 10"@en ;
@@ -704,7 +703,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/nachi-cz-10/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/nachi-cz-10/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/NACHI-CZ10-400x400.png> .
+        foaf:depiction <images/nachi-cz-10.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-indy-10> a pilot:RobotType ;
         rdfs:label "NEUROMEKA INDY 10"@en ;
@@ -712,7 +711,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-indy-10/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-indy-10/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/NEUROMEKA-INDY-10-400x400.png> .
+        foaf:depiction <images/neuromeka-indy-10.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-indy-12> a pilot:RobotType ;
         rdfs:label "NEUROMEKA INDY 12"@en ;
@@ -720,7 +719,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-indy-12/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-indy-12/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/03/NEUROMEKA-INDY-12-400x400.png> .
+        foaf:depiction <images/neuromeka-indy-12.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-indy-3> a pilot:RobotType ;
         rdfs:label "NEUROMEKA INDY 3"@en ;
@@ -728,7 +727,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-indy-3/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-indy-3/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/NEUROMEKA-INDY3-400x400.png> .
+        foaf:depiction <images/neuromeka-indy-3.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-indy-5> a pilot:RobotType ;
         rdfs:label "NEUROMEKA INDY 5"@en ;
@@ -736,7 +735,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-indy-5/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-indy-5/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/NEUROMEKA-INDY-5-400x400.png> .
+        foaf:depiction <images/neuromeka-indy-5.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-indy-7> a pilot:RobotType ;
         rdfs:label "NEUROMEKA INDY 7"@en ;
@@ -744,7 +743,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-indy-7/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-indy-7/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/NEUROMEKA-INDY-7-400x400.png> .
+        foaf:depiction <images/neuromeka-indy-7.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-indy-rp> a pilot:RobotType ;
         rdfs:label "NEUROMEKA INDY RP"@en ;
@@ -752,7 +751,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-indy-rp/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-indy-rp/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/NEUROMEKA-INDYRP-400x400.png> .
+        foaf:depiction <images/neuromeka-indy-rp.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-indy-rp2> a pilot:RobotType ;
         rdfs:label "NEUROMEKA INDY RP2"@en ;
@@ -760,7 +759,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-indy-rp2/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-indy-rp2/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/03/NEUROMEKA-INDYRP2-400x400.png> .
+        foaf:depiction <images/neuromeka-indy-rp2.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-opti-10> a pilot:RobotType ;
         rdfs:label "NEUROMEKA OPTI 10"@en ;
@@ -768,7 +767,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-opti-10/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-opti-10/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/NEUROMEKA-OPTI10-400x400.png> .
+        foaf:depiction <images/neuromeka-opti-10.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-opti-5> a pilot:RobotType ;
         rdfs:label "NEUROMEKA OPTI 5"@en ;
@@ -776,14 +775,14 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-opti-5/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/neuromeka-opti-5/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/NEUROMEKA-OPTI5-400x400.png> .
+        foaf:depiction <images/neuromeka-opti-5.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/niryo-one> a pilot:RobotType ;
         rdfs:label "NIRYO ONE"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/France> ;
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/niryo-one/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/NIRYO-ONE-400x400.png> .
+        foaf:depiction <images/niryo-one.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/pilz-manipulator-module-prbt> a pilot:RobotType ;
         rdfs:label "PILZ MANIPULATOR MODULE PRBT"@en ;
@@ -791,20 +790,20 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/pilz-manipulator-module-prbt/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/pilz-manipulator-module-prbt/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/MANIPULATOR-MODULE-PRBT-PILZ-400x400.png> .
+        foaf:depiction <images/pilz-manipulator-module-prbt.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/precise-automation-direct-drive-6-axis> a pilot:RobotType ;
         rdfs:label "PRECISE AUTOMATION DIRECT DRIVE 6-AXIS"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/United_States> ;
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/04/PRECISE-AUTOMATION-DIRECT-DRIVE-400x400.png> .
+        foaf:depiction <images/precise-automation-direct-drive-6-axis.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/precise-automation-pavp6> a pilot:RobotType ;
         rdfs:label "PRECISE AUTOMATION PAVP6"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/United_States> ;
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/precise-automation-pavp6/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/PRECISE-AUTOMATION-PAVP6-400x400.png> .
+        foaf:depiction <images/precise-automation-pavp6.avif> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/precise-automation-pavs6> a pilot:RobotType ;
         rdfs:label "PRECISE AUTOMATION PAVS6"@en ;
@@ -812,7 +811,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/precise-automation-pavs6/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/precise-automation-pavs6/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/03/PRECISE-AUTOMATION-PAVS6-400x400.png> .
+        foaf:depiction <images/precise-automation-pavs6.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/precise-automation-pf3400> a pilot:RobotType ;
         rdfs:label "PRECISE AUTOMATION PF3400"@en ;
@@ -820,13 +819,13 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "4"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/precise-automation-pf3400/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/precise-automation-pf3400/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/PRECISE-AUTOMATION-PF400-400x400.png> .
+        foaf:depiction <images/precise-automation-pf3400.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/precise-automation-pp100> a pilot:RobotType ;
         rdfs:label "PRECISE AUTOMATION PP100"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/United_States> ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/precise-automation-pp100/payload/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/PRECISE-AUTOMATION-P-100-400x400.png> .
+        foaf:depiction <images/precise-automation-pp100.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/productive-robotics-ob7> a pilot:RobotType ;
         rdfs:label "PRODUCTIVE ROBOTICS OB7"@en ;
@@ -834,7 +833,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/productive-robotics-ob7/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/productive-robotics-ob7/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/PRODUCTIVE-ROBOTICS-OB7-400x400.png> .
+        foaf:depiction <images/productive-robotics-ob7.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/productive-robotics-ob7-max-12> a pilot:RobotType ;
         rdfs:label "PRODUCTIVE ROBOTICS OB7 MAX 12"@en ;
@@ -842,7 +841,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/productive-robotics-ob7-max-12/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/productive-robotics-ob7-max-12/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/04/PRODUCTIVE-ROBOTICS-OB7-MAX12-400x400.png> .
+        foaf:depiction <images/productive-robotics-ob7-max-12.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/productive-robotics-ob7-max-8> a pilot:RobotType ;
         rdfs:label "PRODUCTIVE ROBOTICS OB7 MAX 8"@en ;
@@ -850,7 +849,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/productive-robotics-ob7-max-8/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/productive-robotics-ob7-max-8/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/04/PRODUCTIVE-ROBOTICS-OB7-MAX8-400x400.png> .
+        foaf:depiction <images/productive-robotics-ob7-max-8.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/rainbow-robotics-rb10-1300> a pilot:RobotType ;
         rdfs:label "RAINBOW ROBOTICS RB10 1300"@en ;
@@ -858,7 +857,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/rainbow-robotics-rb10-1300/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/rainbow-robotics-rb10-1300/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2020/04/RAINBOWROBOTICS-RB10-1300-400x400.png> .
+        foaf:depiction <images/rainbow-robotics-rb10-1300.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/rainbow-robotics-rb3-1200> a pilot:RobotType ;
         rdfs:label "RAINBOW ROBOTICS RB3 1200"@en ;
@@ -866,7 +865,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/rainbow-robotics-rb3-1200/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/rainbow-robotics-rb3-1200/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2020/04/RAINBOWROBOTICS-RB3-1200-400x400.png> .
+        foaf:depiction <images/rainbow-robotics-rb3-1200.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/rainbow-robotics-rb5-850> a pilot:RobotType ;
         rdfs:label "RAINBOW ROBOTICS RB5 850"@en ;
@@ -874,7 +873,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/rainbow-robotics-rb5-850/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/rainbow-robotics-rb5-850/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2020/04/RAINBOWROBOTICS-RB5-850-400x400.png> .
+        foaf:depiction <images/rainbow-robotics-rb5-850.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/rainbow-robotics-rb5-850a> a pilot:RobotType ;
         rdfs:label "RAINBOW ROBOTICS RB5 850A"@en ;
@@ -882,14 +881,14 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/rainbow-robotics-rb5-850a/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/rainbow-robotics-rb5-850a/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/06/RAINBOW-RB5-400x400.png> .
+        foaf:depiction <images/rainbow-robotics-rb5-850a.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/rethink-robotics-baxter> a pilot:RobotType ;
         rdfs:label "RETHINK ROBOTICS BAXTER"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/United_States> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/rethink-robotics-baxter/reach/quantity> ;
         pilot:hasRepeatability <http://data.ifs.tuwien.ac.at/star2/instance/robot/rethink-robotics-baxter/repeatability/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/RETHINK-ROBOTICS-Baxter-400x400.png> .
+        foaf:depiction <images/rethink-robotics-baxter.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/rethink-robotics-sawyer> a pilot:RobotType ;
         rdfs:label "RETHINK ROBOTICS SAWYER"@en ;
@@ -897,15 +896,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/rethink-robotics-sawyer/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/rethink-robotics-sawyer/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/RETHINK-ROBOTICS-Sawyer-400x400.png> .
-
-    <http://data.ifs.tuwien.ac.at/star2/instance/robot/rethink-robotics-sawyer-black-edition> a pilot:RobotType ;
-        rdfs:label "RETHINK ROBOTICS SAWYER BLACK EDITION"@en ;
-        pilot:countryOfOrigin <http://dbpedia.org/resource/Germany> ;
-        pilot:hasDegreesOfFreedom "7"^^xsd:int ;
-        pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/rethink-robotics-sawyer-black-edition/payload/quantity> ;
-        pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/rethink-robotics-sawyer-black-edition/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/10/RETHINK-ROBOTICS-BLACK-EDITION-400x400.png> .
+        foaf:depiction <images/rethink-robotics-sawyer.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/robut-tech-armobot> a pilot:RobotType ;
         rdfs:label "ROBUT TECH ARMOBOT"@en ;
@@ -913,12 +904,11 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/robut-tech-armobot/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/robut-tech-armobot/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/ROBUT-TECH-ARMOBOT-400x400.png> .
+        foaf:depiction <images/robut-tech-armobot.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/robut-tech-armobot-mini> a pilot:RobotType ;
         rdfs:label "ROBUT TECH ARMOBOT MINI"@en ;
-        pilot:countryOfOrigin <http://dbpedia.org/resource/Turkey> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/04/ROBUT-TECH-ARMOBOT-MINI-400x400.png> .
+        pilot:countryOfOrigin <http://dbpedia.org/resource/Turkey> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/rokae-xmate> a pilot:RobotType ;
         rdfs:label "ROKAE XMATE"@en ;
@@ -926,7 +916,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/rokae-xmate/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/rokae-xmate/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2020/04/ROKAE-400x400.png> .
+        foaf:depiction <images/rokae-xmate.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/rozum-pulse-75> a pilot:RobotType ;
         rdfs:label "ROZUM PULSE 75"@en ;
@@ -934,26 +924,26 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/rozum-pulse-75/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/rozum-pulse-75/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/ROZUM-PULSE-75-400x400.png> .
+        foaf:depiction <images/rozum-pulse-75.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/rozum-pulse-90> a pilot:RobotType ;
         rdfs:label "ROZUM PULSE 90"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/Belarus> ;
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/rozum-pulse-90/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/ROZUM-PULSE-90-400x400.png> .
+        foaf:depiction <images/rozum-pulse-90.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/siasun-dscr3-duco> a pilot:RobotType ;
         rdfs:label "SIASUN DSCR3 DUCO"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/China> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/siasun-dscr3-duco/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/SIASUN-DSCR3-DUCO-400x400.png> .
+        foaf:depiction <images/siasun-dscr3-duco.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/siasun-dscr5-duco> a pilot:RobotType ;
         rdfs:label "SIASUN DSCR5 DUCO"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/China> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/siasun-dscr5-duco/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/SIASUN-DSCR5-DUCO-400x400.png> .
+        foaf:depiction <images/siasun-dscr5-duco.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/siasun-gcr14-1400> a pilot:RobotType ;
         rdfs:label "SIASUN GCR14-1400"@en ;
@@ -961,7 +951,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/siasun-gcr14-1400/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/siasun-gcr14-1400/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/SIASUN-GCR141400-400x400.png> .
+        foaf:depiction <images/siasun-gcr14-1400.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/siasun-gcr20-1100> a pilot:RobotType ;
         rdfs:label "SIASUN GCR20-1100"@en ;
@@ -969,7 +959,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/siasun-gcr20-1100/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/siasun-gcr20-1100/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/SIASUN-GCR201100-400x400.png> .
+        foaf:depiction <images/siasun-gcr20-1100.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/siasun-gcr5-910> a pilot:RobotType ;
         rdfs:label "SIASUN GCR5-910"@en ;
@@ -977,7 +967,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/siasun-gcr5-910/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/siasun-gcr5-910/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2020/04/SIASUN-GCR5-910-400x400.png> .
+        foaf:depiction <images/siasun-gcr5-910.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/siasun-scr3> a pilot:RobotType ;
         rdfs:label "SIASUN SCR3"@en ;
@@ -985,7 +975,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/siasun-scr3/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/siasun-scr3/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/03/SIASUN-SCR-3-400x400.png> .
+        foaf:depiction <images/siasun-scr3.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/siasun-scr5> a pilot:RobotType ;
         rdfs:label "SIASUN SCR5"@en ;
@@ -993,28 +983,28 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/siasun-scr5/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/siasun-scr5/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/SIASUN-SCR-5-400x400.png> .
+        foaf:depiction <images/siasun-scr5.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/st-robotics-r12-5-6> a pilot:RobotType ;
         rdfs:label "ST ROBOTICS R12 5-6"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/United_Kingdom> ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/st-robotics-r12-5-6/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/st-robotics-r12-5-6/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/ST-ROBOTICS-R12-6-400x400.png> .
+        foaf:depiction <images/st-robotics-r12-5-6.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/st-robotics-r17-5-6> a pilot:RobotType ;
         rdfs:label "ST ROBOTICS R17 5-6"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/United_Kingdom> ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/st-robotics-r17-5-6/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/st-robotics-r17-5-6/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/ST-ROBOTICS-R17-400x400.png> .
+        foaf:depiction <images/st-robotics-r17-5-6.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-40> a pilot:RobotType ;
         rdfs:label "STAUBLI TX2 40"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/Switzerland> ;
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-40/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/STAUBLI-TX2-40-400x400.png> .
+        foaf:depiction <images/staubli-tx2-40.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-60> a pilot:RobotType ;
         rdfs:label "STAUBLI TX2 60"@en ;
@@ -1022,7 +1012,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-60/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-60/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/STAUBLI-TX2-60-400x400.png> .
+        foaf:depiction <images/staubli-tx2-60.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-60l> a pilot:RobotType ;
         rdfs:label "STAUBLI TX2 60L"@en ;
@@ -1030,7 +1020,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-60l/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-60l/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/STAUBLI-TX2-60L-400x400.png> .
+        foaf:depiction <images/staubli-tx2-60l.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-90> a pilot:RobotType ;
         rdfs:label "STAUBLI TX2 90"@en ;
@@ -1038,7 +1028,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-90/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-90/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/STAUBLI-TX2-90-400x400.png> .
+        foaf:depiction <images/staubli-tx2-90.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-90l> a pilot:RobotType ;
         rdfs:label "STAUBLI TX2 90L"@en ;
@@ -1046,7 +1036,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-90l/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-90l/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/STAUBLI-TX2-90L-400x400.png> .
+        foaf:depiction <images/staubli-tx2-90.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-90xl> a pilot:RobotType ;
         rdfs:label "STAUBLI TX2 90XL"@en ;
@@ -1054,21 +1044,21 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-90xl/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-90xl/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/STAUBLI-TX2-90XL-400x400.png> .
+        foaf:depiction <images/staubli-tx2-90l.png> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-touch-60> a pilot:RobotType ;
         rdfs:label "STAUBLI TX2 TOUCH 60"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/Switzerland> ;
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-touch-60/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/05/STAUBLI-TX2-60-TOUCH-400x400.png> .
+        foaf:depiction <images/staubli-tx2-touch-60.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-touch-60l> a pilot:RobotType ;
         rdfs:label "STAUBLI TX2 TOUCH 60L"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/Switzerland> ;
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-touch-60l/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/05/STAUBLI-TX2-60L-TOUCH-400x400.png> .
+        foaf:depiction <images/staubli-tx2-touch-60l.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-touch-90> a pilot:RobotType ;
         rdfs:label "STAUBLI TX2 TOUCH 90"@en ;
@@ -1076,7 +1066,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-touch-90/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-touch-90/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/05/STAUBLI-TX2-90-TOUCH-400x400.png> .
+        foaf:depiction <images/staubli-tx2-touch-90.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-touch-90l> a pilot:RobotType ;
         rdfs:label "STAUBLI TX2 TOUCH 90L"@en ;
@@ -1084,7 +1074,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-touch-90l/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-touch-90l/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/05/STAUBLI-TX2-90L-TOUCH-400x400.png> .
+        foaf:depiction <images/staubli-tx2-touch-90l.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-touch-90xl> a pilot:RobotType ;
         rdfs:label "STAUBLI TX2 TOUCH 90XL"@en ;
@@ -1092,21 +1082,20 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-touch-90xl/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/staubli-tx2-touch-90xl/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/05/STAUBLI-TX2-90XL-TOUCH-400x400.png> .
+        foaf:depiction <images/staubli-tx2-touch-90xl.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/svaya-robotics> a pilot:RobotType ;
         rdfs:label "SVAYA ROBOTICS"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/India> ;
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/SVAYA-ROBOTICS-400x400.png> .
+        foaf:depiction <images/svaya-robotics.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/tata-brabo-gen-i-tr05-10> a pilot:RobotType ;
         rdfs:label "TATA BRABO GEN-I TR05-10"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/Switzerland> ;
         pilot:hasDegreesOfFreedom "5"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/tata-brabo-gen-i-tr05-10/payload/quantity> ;
-        pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/tata-brabo-gen-i-tr05-10/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/TATA-BRABO-TR05-10-400x400.png> .
+        pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/tata-brabo-gen-i-tr05-10/reach/quantity> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/tata-brabo-gen-i-tr05-2> a pilot:RobotType ;
         rdfs:label "TATA BRABO GEN-I TR05-2"@en ;
@@ -1114,7 +1103,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "5"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/tata-brabo-gen-i-tr05-2/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/tata-brabo-gen-i-tr05-2/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/TATA-BRABO-TR05-2-400x400.jpg> .
+        foaf:depiction <images/tata-brabo-gen-i-tr05-2.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/tata-brabo-gen-i-tr06-6> a pilot:RobotType ;
         rdfs:label "TATA BRABO GEN-I TR06-6"@en ;
@@ -1122,7 +1111,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/tata-brabo-gen-i-tr06-6/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/tata-brabo-gen-i-tr06-6/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/TATA-BRABO-TR06-6-400x400.png> .
+        foaf:depiction <images/tata-brabo-gen-i-tr06-6.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/techman-robot-tm12> a pilot:RobotType ;
         rdfs:label "TECHMAN ROBOT TM12"@en ;
@@ -1130,7 +1119,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/techman-robot-tm12/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/techman-robot-tm12/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/TECHMAN-ROBOT-TM-12-400x400.png> .
+        foaf:depiction <images/techman-robot-tm12.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/techman-robot-tm14> a pilot:RobotType ;
         rdfs:label "TECHMAN ROBOT TM14"@en ;
@@ -1138,15 +1127,14 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/techman-robot-tm14/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/techman-robot-tm14/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/TECHMAN-ROBOT-TM-14-400x400.png> .
+        foaf:depiction <images/techman-robot-tm14.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/techman-robot-tm5-700> a pilot:RobotType ;
         rdfs:label "TECHMAN ROBOT TM5 700"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/Japan> ;
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/techman-robot-tm5-700/payload/quantity> ;
-        pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/techman-robot-tm5-700/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/TECHMAN-ROBOT-TM-5-700-400x400.png> .
+        pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/techman-robot-tm5-700/reach/quantity> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/techman-robot-tm5-900> a pilot:RobotType ;
         rdfs:label "TECHMAN ROBOT TM5 900"@en ;
@@ -1154,7 +1142,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/techman-robot-tm5-900/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/techman-robot-tm5-900/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/TECHMAN-ROBOT-TM-5-900-400x400.png> .
+        foaf:depiction <images/techman-robot-tm5-900.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/tokyo-robotics-torobo-arm> a pilot:RobotType ;
         rdfs:label "TOKYO ROBOTICS TOROBO ARM"@en ;
@@ -1162,7 +1150,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/tokyo-robotics-torobo-arm/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/tokyo-robotics-torobo-arm/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2020/03/TOROBO-400x400.png> .
+        foaf:depiction <images/tokyo-robotics-torobo-arm.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/tokyo-robotics-torobo-arm-mini> a pilot:RobotType ;
         rdfs:label "TOKYO ROBOTICS TOROBO ARM MINI"@en ;
@@ -1170,14 +1158,14 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/tokyo-robotics-torobo-arm-mini/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/tokyo-robotics-torobo-arm-mini/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2020/03/TOROBO-MINI-400x400.png> .
+        foaf:depiction <images/tokyo-robotics-torobo-arm-mini.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/ufactory-uarm-swift-pro> a pilot:RobotType ;
         rdfs:label "UFACTORY UARM SWIFT PRO"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/China> ;
         pilot:hasDegreesOfFreedom "4"^^xsd:int ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/ufactory-uarm-swift-pro/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2020/04/UFACTORY-UARM-SWIFT-400x400.png> .
+        foaf:depiction <images/ufactory-uarm-swift-pro.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/ufactory-xarm5-lite> a pilot:RobotType ;
         rdfs:label "UFACTORY XARM5 LITE"@en ;
@@ -1185,7 +1173,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "5"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/ufactory-xarm5-lite/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/ufactory-xarm5-lite/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2020/04/UFACTORY-XARM5-LITE-400x400.png> .
+        foaf:depiction <images/ufactory-xarm5-lite.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/ufactory-xarm6> a pilot:RobotType ;
         rdfs:label "UFACTORY XARM6"@en ;
@@ -1193,14 +1181,14 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/ufactory-xarm6/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/ufactory-xarm6/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2020/04/UFACTORY-XARM6-400x400.png> .
+        foaf:depiction <images/ufactory-xarm6.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/ufactory-xarm7> a pilot:RobotType ;
         rdfs:label "UFACTORY XARM7"@en ;
         pilot:countryOfOrigin <http://dbpedia.org/resource/China> ;
         pilot:hasDegreesOfFreedom "7"^^xsd:int ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/ufactory-xarm7/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2020/04/UFACTORY-XARM7-400x400.png> .
+        foaf:depiction <images/ufactory-xarm7.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/universal-robots-ur10> a pilot:RobotType ;
         rdfs:label "UNIVERSAL ROBOTS UR10"@en ;
@@ -1208,7 +1196,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/universal-robots-ur10/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/universal-robots-ur10/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/UNIVERSAL-ROBOTS-UR10-400x400.png> .
+        foaf:depiction <images/universal-robots-ur10.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/universal-robots-ur10e> a pilot:RobotType ;
         rdfs:label "UNIVERSAL ROBOTS UR10E"@en ;
@@ -1216,7 +1204,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/universal-robots-ur10e/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/universal-robots-ur10e/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/UNIVERSAL-ROBOTS-UR10e-400x400.png> .
+        foaf:depiction <images/universal-robots-ur10e.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/universal-robots-ur16e> a pilot:RobotType ;
         rdfs:label "UNIVERSAL ROBOTS UR16e"@en ;
@@ -1224,7 +1212,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/universal-robots-ur16e/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/universal-robots-ur16e/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/09/UNIVERSAL-ROBOTS-UR16e-400x400.png> .
+        foaf:depiction <images/universal-robots-ur16e.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/universal-robots-ur3> a pilot:RobotType ;
         rdfs:label "UNIVERSAL ROBOTS UR3"@en ;
@@ -1232,7 +1220,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/universal-robots-ur3/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/universal-robots-ur3/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/UNIVERSAL-ROBOTS-UR3-400x400.png> .
+        foaf:depiction <images/universal-robots-ur3.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/universal-robots-ur3e> a pilot:RobotType ;
         rdfs:label "UNIVERSAL ROBOTS UR3E"@en ;
@@ -1240,7 +1228,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/universal-robots-ur3e/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/universal-robots-ur3e/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/UNIVERSAL-ROBOTS-UR3e-400x400.png> .
+        foaf:depiction <images/universal-robots-ur3e.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/universal-robots-ur5> a pilot:RobotType ;
         rdfs:label "UNIVERSAL ROBOTS UR5"@en ;
@@ -1248,7 +1236,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/universal-robots-ur5/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/universal-robots-ur5/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/UNIVERSAL-ROBOTS-UR5-400x400.png> .
+        foaf:depiction <images/universal-robots-ur5.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/universal-robots-ur5e> a pilot:RobotType ;
         rdfs:label "UNIVERSAL ROBOTS UR5E"@en ;
@@ -1256,7 +1244,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/universal-robots-ur5e/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/universal-robots-ur5e/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/UNIVERSAL-ROBOTS-UR5e-400x400.png> .
+        foaf:depiction <images/universal-robots-ur5e.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/yaskawa-motoman-hc10> a pilot:RobotType ;
         rdfs:label "YASKAWA MOTOMAN HC10"@en ;
@@ -1264,7 +1252,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/yaskawa-motoman-hc10/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/yaskawa-motoman-hc10/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2018/11/YASKAWA-MOTOMAN-HC10-400x400.png> .
+        foaf:depiction <images/yaskawa-motoman-hc10.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/yaskawa-motoman-hc10dt> a pilot:RobotType ;
         rdfs:label "YASKAWA MOTOMAN HC10DT"@en ;
@@ -1272,7 +1260,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/yaskawa-motoman-hc10dt/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/yaskawa-motoman-hc10dt/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/02/YASKAWA-MOTOMAN-HC10DT-400x400.png> .
+        foaf:depiction <images/yaskawa-motoman-hc10dt.webp> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/yaskawa-motoman-hc20> a pilot:RobotType ;
         rdfs:label "YASKAWA MOTOMAN HC20"@en ;
@@ -1280,7 +1268,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/yaskawa-motoman-hc20/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/yaskawa-motoman-hc20/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/04/YASKAWA-MOTOMAN-HC20-NEW-400x400.png> .
+        foaf:depiction <images/yaskawa-motoman-hc20.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/yuanda-robot> a pilot:RobotType ;
         rdfs:label "YUANDA ROBOT"@en ;
@@ -1288,7 +1276,7 @@ dat:coboticsworld-cobots {
         pilot:hasDegreesOfFreedom "6"^^xsd:int ;
         pilot:hasHandlingPayload <http://data.ifs.tuwien.ac.at/star2/instance/robot/yuanda-robot/payload/quantity> ;
         pilot:hasReach <http://data.ifs.tuwien.ac.at/star2/instance/robot/yuanda-robot/reach/quantity> ;
-        foaf:depiction <https://www.coboticsworld.com/wp-content/uploads/2019/03/YUANDA-400x400.png> .
+        foaf:depiction <images/yuanda-robot.jpg> .
 
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/abb-irb-14050-yumi/reach/quantity> a qudt:Quantity ;
         rdfs:label "559 mm" ;
@@ -3890,337 +3878,5 @@ dat:coboticsworld-cobots {
     <http://data.ifs.tuwien.ac.at/star2/instance/robot/yuanda-robot/reach/unit/mm/1000> a qudt:QuantityValue ;
         qudt:numericValue 1e+03 ;
         qudt:unit qudtu:MilliM .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/ABB-IRB-14050-YUMI-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/AUBO-I5-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/AUTOMATA-EVA2-400X400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/BOSCH-APAS-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/CARBON-ROBOTICS-KATIA-400x400-1.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/COMAU-AURA-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/COMAU-E.DO-6-AXES-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/DENSO-COBOTTA-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/DLR-SARA-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/DOOSAN-M0609-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/DOOSAN-M0617-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/DOOSAN-M1013-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/DOOSAN-M1509-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/ELEPHANT-ROBOTICS-S5-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/FANUC-CR15iA-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/FANUC-CR4iA-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/FANUC-CR7LiA-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/FANUC-CR7iA-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/FESTO-BIONICROBOT-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/FP-Personal-Robotics-PROB-2R-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/FRANKA-EMIKA-Panda-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/HADDINGTON-DYNAMICS-DEXTER-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/HANWHA-HCR5-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/HRG-T5-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/ISYBOT-SYB3-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/KAWADA-INDUSTRIES-NEXTAGE-400x400-1.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/KAWASAKI-DUARO-1-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/KAWASAKI-DUARO-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/KINOVA-GEN3-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/KINOVA-JACO2-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/KINOVA-MICO2-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/KUKA-LBR-IISY-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/KUKA-LBR-IIWA-14-R820-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/KUKA-LBR-IIWA-7-R800-400x400-1.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/LIFE-ROBOTICS-CORO-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/MABI-SPEEDY-12-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/MABI-SPEEDY-6-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/MANIPULATOR-MODULE-PRBT-PILZ-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/MIP-JUNIOR-2-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/MRK-SYSTEM-KR-5-SI-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/NACHI-CZ10-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/NEUROMEKA-INDY-5-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/NEUROMEKA-INDY-7-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/NEUROMEKA-INDY3-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/NEUROMEKA-INDYRP-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/PRECISE-AUTOMATION-P-100-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/PRECISE-AUTOMATION-PAVP6-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/PRECISE-AUTOMATION-PF400-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/PRODUCTIVE-ROBOTICS-OB7-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/RETHINK-ROBOTICS-Baxter-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/RETHINK-ROBOTICS-Sawyer-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/ROBUT-TECH-ARMOBOT-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/ST-ROBOTICS-R17-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/STAUBLI-TX2-40-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/STAUBLI-TX2-60-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/STAUBLI-TX2-60L-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/STAUBLI-TX2-90-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/STAUBLI-TX2-90L-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/STAUBLI-TX2-90XL-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/TATA-BRABO-TR06-6-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/TECHMAN-ROBOT-TM-12-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/TECHMAN-ROBOT-TM-14-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/TECHMAN-ROBOT-TM-5-700-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/TECHMAN-ROBOT-TM-5-900-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/UNIVERSAL-ROBOTS-UR10-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/UNIVERSAL-ROBOTS-UR10e-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/UNIVERSAL-ROBOTS-UR3-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/UNIVERSAL-ROBOTS-UR3e-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/UNIVERSAL-ROBOTS-UR5-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/UNIVERSAL-ROBOTS-UR5e-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2018/11/YASKAWA-MOTOMAN-HC10-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/AUBO-I10-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/AUBO-I3-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/AUBO-I7-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/Acutronic-MARA-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/ELEPHANT-CATBOT-S3-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/ESI-CANARM-15-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/ESI-CANARM-7-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/FANUC-CR35iA-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/FP-Personal-Robotics-PROB-2R-48-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/HANS-ROBOT-ELFIN-10-NEW-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/HANS-ROBOT-ELFIN-3-NEW-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/HANS-ROBOT-ELFIN-5-NEW-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/HANWHA-HCR12-400x400png.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/HANWHA-HCR3-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/INOVO-ROBOTICS-2-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/KASSOW-ROBOTS-KR-1205-400x400.jpg> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/KASSOW-ROBOTS-KR1805-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/KASSOW-ROBOTS-KR810-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/NEUROMEKA-INDY-10-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/NEUROMEKA-OPTI10-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/NEUROMEKA-OPTI5-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/NIRYO-ONE-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/ROZUM-PULSE-75-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/ROZUM-PULSE-90-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/SIASUN-DSCR3-DUCO-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/SIASUN-DSCR5-DUCO-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/SIASUN-GCR141400-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/SIASUN-GCR201100-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/SIASUN-SCR-5-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/ST-ROBOTICS-R12-6-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/SVAYA-ROBOTICS-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/TATA-BRABO-TR05-10-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/TATA-BRABO-TR05-2-400x400.jpg> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/02/YASKAWA-MOTOMAN-HC10DT-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/03/DOBOT-M1-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/03/DOBOT-MAGICIAN-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/03/ELIBOT-EC63-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/03/ELIBOT-EC66-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/03/ELIBOT-EC75-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/03/JAKA-ZU-12-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/03/JAKA-ZU-3-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/03/JAKA-ZU-7-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/03/KINETICS-SYSTEMS-Robot-6-Axes-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/03/KINETICS-SYSTEMS-Robot-Scara-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/03/KUKA-LWR-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/03/MEGAROBO-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/03/MIP-JUNIOR-300-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/03/NEUROMEKA-INDY-12-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/03/NEUROMEKA-INDYRP2-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/03/PRECISE-AUTOMATION-PAVS6-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/03/SIASUN-SCR-3-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/03/YUANDA-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/04/FANUC-CR4iAL-400x400.jpg> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/04/FLEXIV-RIZON-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/04/HITBOT-Z-ARM-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/04/HITBOT-Z-ARM-MINI-400x400..png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/04/MODBOT-6-DOF-C-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/04/PRECISE-AUTOMATION-DIRECT-DRIVE-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/04/PRODUCTIVE-ROBOTICS-OB7-MAX12-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/04/PRODUCTIVE-ROBOTICS-OB7-MAX8-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/04/ROBUT-TECH-ARMOBOT-MINI-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/04/YASKAWA-MOTOMAN-HC20-NEW-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/05/ELEPHANT-PANDA-3-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/05/ELEPHANT-PANDA-5-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/05/STAUBLI-TX2-60-TOUCH-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/05/STAUBLI-TX2-60L-TOUCH-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/05/STAUBLI-TX2-90-TOUCH-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/05/STAUBLI-TX2-90L-TOUCH-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/05/STAUBLI-TX2-90XL-TOUCH-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/06/DOBOT-CR6-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/06/RAINBOW-RB5-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/09/UNIVERSAL-ROBOTS-UR16e-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/10/RETHINK-ROBOTICS-BLACK-EDITION-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/12/FANUC-CRX10IA-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/12/FANUC-CRX10IAL-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/12/HYUNDAI-ROBOT-YL012-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/12/JAKA-ZU-18-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2019/12/JAKA-ZU-3m-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2020/01/ELEPHANT-PANDA-10-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2020/03/TOROBO-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2020/03/TOROBO-MINI-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2020/04/AUBO-I16-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2020/04/DOBOT-MAGICIAN-LITE-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2020/04/KASSOW-ROBOTS-KR1410-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2020/04/KINOVA-GEN2-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2020/04/KINOVA-GEN3-LITE-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2020/04/RAINBOWROBOTICS-RB10-1300-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2020/04/RAINBOWROBOTICS-RB3-1200-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2020/04/RAINBOWROBOTICS-RB5-850-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2020/04/ROKAE-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2020/04/SIASUN-GCR5-910-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2020/04/UFACTORY-UARM-SWIFT-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2020/04/UFACTORY-XARM5-LITE-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2020/04/UFACTORY-XARM6-400x400.png> a foaf:Image .
-
-    <https://www.coboticsworld.com/wp-content/uploads/2020/04/UFACTORY-XARM7-400x400.png> a foaf:Image .
 }
 
