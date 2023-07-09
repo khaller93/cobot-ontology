@@ -1,0 +1,406 @@
+@prefix plant: <http://data.ifs.tuwien.ac.at/star2/instance/plant/> .
+@prefix robot: <http://data.ifs.tuwien.ac.at/star2/instance/robot/> .
+@prefix actuator: <http://data.ifs.tuwien.ac.at/star2/instance/endeffector/> .
+@prefix skill: <http://data.ifs.tuwien.ac.at/star2/instance/skill/> .
+@prefix astep: <http://data.ifs.tuwien.ac.at/star2/instance/skill/Assemble/step/> .
+@prefix hf: <http://data.ifs.tuwien.ac.at/star2/instance/handlingfunction/> .
+@prefix sensor: <http://data.ifs.tuwien.ac.at/star2/instance/sensor/> .
+
+@prefix star2: <http://data.ifs.tuwien.ac.at/star2/ontology#> .
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix col: <http://purl.org/co/> .
+
+
+plant:Pilotfabrik a star2:ProductionPlant ;
+	rdfs:label "Pilotfabrik Industry 4.0"@en ;
+	rdfs:label "Pilotfabrik Industrie 4.0"@de ;
+	rdfs:comment "Today, making products is more than just setting up a machine and pressing the big green button. Industrial production is becoming ever more complicated and networked. In the future, individual production steps will no longer be able to be viewed separately in production; all areas of production will be networked and coordinated with each other in terms of information technology. The Vienna University of Technology is now taking an important step into the new age of production – in the pilot factory of the Vienna University of Technology, research and testing will be carried out into what the industry of tomorrow should look like."@en ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/pilotfabrik.jpg> ;
+	foaf:homepage <http://pilotfabrik.tuwien.ac.at> ;
+	star2:isHousingRobot robot:UR3-001 ;
+	star2:isHousingRobot robot:UR5-001 ;
+	star2:isHousingRobot robot:UR10-001 ;
+	star2:isHousingRobot robot:LBRiiwa7R800-001 ;
+	star2:isHousingRobot robot:Fanuc-CR-7iA-001 ;
+	star2:isHousingRobot robot:ABBIRB2600-M2004-0001 ;
+	star2:isHousingRobot robot:Neobotix-MP-400-0001 ;
+	star2:isHousingRobot robot:Neobotix-MP-400-0002 ;
+	star2:isHousingRobot robot:Franka-Emika-Panda-0001 ;
+	star2:isHousingActuator actuator:Schunk-EGA-0001 ;
+	star2:isHousingActuator actuator:Robotiq-Gripper-HandE-0001 ;
+	star2:isHousingActuator actuator:Robotiq-Gripper-2F-85-0001 .
+
+
+# Robot types
+
+robot:universal-robots-ur3 a star2:RobotType ;
+	rdfs:label "UR3"@en ;
+	rdfs:comment "The UR3 collaborative robot is a smaller collaborative table-top robot, perfect for light assembly tasks and automated workbench scenarios. The compact table-top cobot weighs only 24.3 lbs (11 kg), but has a payload of 6.6 lbs (3 kg),  ±360-degree rotation on all wrist joints, and infinite rotation on the end joint."@en ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/robot/ur3.png> ;
+	star2:offersHandlingFunction hf:Move , hf:Approach , hf:Depart , hf:Retract , hf:ExecMotion , hf:MoveToProduct ;
+	star2:offersSkill skill:Wait , skill:Retrieve , skill:Store ;
+	star2:isCompatibleWithActuatorType actuator:Schunk-EGA , actuator:Robotiq-Gripper-HandE , actuator:Robotiq-Gripper-2F-85 .
+
+robot:universal-robots-ur5 a star2:RobotType ;
+	rdfs:label "UR5"@en ;
+	rdfs:comment "The slightly bigger UR5 is ideal for automating low-weight processing tasks like picking, placing and testing. The medium-sized robot arm is easy to program, fast to set up and, just like the other collaborative members of the UR family, offers one of the fastest payback times in the industry."@en ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/robot/ur5.png> ;
+	star2:offersHandlingFunction hf:Move , hf:Approach , hf:Depart , hf:Retract , hf:ExecMotion , hf:MoveToProduct ;
+	star2:isCompatibleWithActuatorType actuator:Schunk-EGA , actuator:Robotiq-Gripper-HandE , actuator:Robotiq-Gripper-2F-85 ;
+	star2:offersSkill skill:Wait , skill:Retrieve , skill:Store .
+
+robot:universal-robots-ur10 a star2:RobotType ;
+	rdfs:comment "While the largest robot arm in the UR family and the one with the most muscle power, the UR10 does not compromise on precision. The collaborative robot arm will automate heavier-weight process tasks with payload requirements of up to 10 kg."@en ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/robot/ur10.png> ;
+	star2:offersHandlingFunction hf:Move , hf:Approach , hf:Depart , hf:Retract , hf:ExecMotion , hf:MoveToProduct ;
+	star2:isCompatibleWithActuatorType actuator:Schunk-EGA , actuator:Robotiq-Gripper-HandE , actuator:Robotiq-Gripper-2F-85 ;
+	star2:offersSkill skill:Wait , skill:Retrieve , skill:Store .
+
+
+robot:kuka-lbr-iiwa-7-r800 a star2:RobotType ;
+	rdfs:comment "The LBR iiwa is the world’s first series-produced sensitive, and therefore HRC-compatible, robot. LBR stands for “Leichtbauroboter” (German for lightweight robot), iiwa for “intelligent industrial work assistant”. This signals the beginning of a new era in industrial, sensitive robotics – and lays the foundations for innovative and sustainable production processes. For the first time, humans and robots can work together on highly sensitive tasks in close cooperation. This opens up the possibility of new applications and the way is paved for greater cost-effectiveness and utmost efficiency. The collaborative and sensitive LBR iiwa robot is available in two versions with payload capacities of 7 and 14 kilograms."@en ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/robot/lbr-iiwa-7R800.jpg> ;
+	star2:offersHandlingFunction hf:Move , hf:Approach , hf:Depart , hf:Retract , hf:ExecMotion , hf:MoveToProduct ;
+	star2:isCompatibleWithActuatorType actuator:Schunk-EGA , actuator:Robotiq-Gripper-HandE , actuator:Robotiq-Gripper-2F-85 ;
+	star2:offersSkill skill:Wait , skill:Retrieve , skill:Store .
+
+
+robot:fanuc-cr7ia a star2:RobotType ;
+	rdfs:comment "I’m small, flexible and can work right by your side. I take care of light (up to 7 kg) but tedious and repetitive, manual tasks that include different types of material handling, which would otherwise consume an immense amount of your time. Depending on your need, I can be programmed to perform entire production flows that require steady and reliable quality levels. These tasks can range from small parts assembly, to highly repetitive tasks such as picking and placing items from one place to another. My long reach of 911 mm makes me the ideal candidate for machine tending and palletizing applications."@en ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/robot/fanuc-CR-7iAL.jpg> ;
+	star2:offersHandlingFunction hf:Move , hf:Approach , hf:Depart , hf:Retract , hf:ExecMotion , hf:MoveToProduct ;
+	star2:isCompatibleWithActuatorType actuator:Schunk-EGA , actuator:Robotiq-Gripper-HandE , actuator:Robotiq-Gripper-2F-85 ;
+	star2:offersSkill skill:Wait , skill:Retrieve , skill:Store .
+
+
+robot:ABBIRB2600-M2004 a star2:RobotType ;
+	rdfs:label "ABB IRB 2600 M2004"@en ;
+	rdfs:comment "The IRB 2600 is the second model in the sharp generation range with enhanced and new capabilities. It is a compact robot with a high payload capacity. The design has been optimized for targeted applications like arc welding, material handling and machine tending."@en ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/robot/abb-irb-2600-M2004.jpg> ;
+	star2:offersHandlingFunction hf:Move , hf:Approach , hf:Depart , hf:Retract , hf:ExecMotion , hf:MoveToProduct ;
+	star2:offersSkill skill:Wait , skill:Retrieve , skill:Store .
+
+
+robot:Neobotix-MP-400 a star2:RobotType ;
+	rdfs:label "Neobotix MP-400"@en ;
+	rdfs:comment """The mobile robot MP-400 was designed for daily use in industrial applications. Its construction is based on the best elements of our well proven robots but also includes many innovative ideas.
+
+The MP-400's primary task is the flexible material transport in intralogistics. This small, agile robot can cover connections that cannot be realised with stationary conveyors or traditional AGVs.
+
+If required, the MP-400 can also easily be used in more demanding applications. Other possible tasks include mobile manipulation with an integrated robot arm or the whole field of service robotics research.""" ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/robot/neobotix-MP-400.jpg> ;
+	star2:offersHandlingFunction hf:Move , hf:Approach , hf:Depart , hf:Retract , hf:ExecMotion , hf:MoveToProduct ;
+	star2:offersSkill skill:Wait , skill:Supply , skill:Store , skill:Stock , skill:Buffer .
+
+
+robot:Franka-Emika-Panda a star2:RobotType ;
+	rdfs:label "Franka Emika Panda"@en ;
+	rdfs:comment "Inspired by human agility and sense of touch, it is a sensitive and extraordinarily versatile power tool. With torque sensors in all seven axes, the arm skillfully and delicately manipulates objects, flawlessly accomplishing tasks you program it for."@en ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/robot/franka-emika-panda.jpg> ;
+	star2:offersHandlingFunction hf:Move , hf:Approach , hf:Depart , hf:Retract , hf:ExecMotion , hf:MoveToProduct ;
+	star2:isCompatibleWithActuatorType actuator:Schunk-EGA , actuator:Robotiq-Gripper-HandE , actuator:Robotiq-Gripper-2F-85 ;
+	star2:offersSkill skill:Wait , skill:Retrieve , skill:Store .
+
+
+# Robots
+
+robot:UR3-001 a star2:Robot ;
+	rdfs:label "UR3 #1"@en ;
+	rdfs:comment "The UR3 collaborative robot is a smaller collaborative table-top robot, perfect for light assembly tasks and automated workbench scenarios. The compact table-top cobot weighs only 24.3 lbs (11 kg), but has a payload of 6.6 lbs (3 kg),  ±360-degree rotation on all wrist joints, and infinite rotation on the end joint."@en ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/robot/ur3.png> ;
+	star2:locatedIn plant:Pilotfabrik ;
+	star2:isEquippedWithActuator actuator:Robotiq-Gripper-2F-85-0001 ;
+	star2:isInstanceOf robot:universal-robots-ur3 .
+
+robot:UR5-001 a star2:Robot ;
+	rdfs:label "UR5 #1"@en ;
+	rdfs:comment "The slightly bigger UR5 is ideal for automating low-weight processing tasks like picking, placing and testing. The medium-sized robot arm is easy to program, fast to set up and, just like the other collaborative members of the UR family, offers one of the fastest payback times in the industry."@en ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/robot/ur5.png> ;
+	star2:isInstanceOf robot:universal-robots-ur5 .
+
+robot:UR10-001 a star2:Robot ;
+	rdfs:label "UR10 #1"@en ;
+	rdfs:comment "While the largest robot arm in the UR family and the one with the most muscle power, the UR10 does not compromise on precision. The collaborative robot arm will automate heavier-weight process tasks with payload requirements of up to 10 kg."@en ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/robot/ur10.png> ;
+	star2:locatedIn plant:Pilotfabrik ;
+	star2:isInstanceOf robot:universal-robots-ur10 .
+
+robot:LBRiiwa7R800-001 a star2:Robot ;
+	rdfs:label "LBR iiwa 7R800 #1" ;
+	rdfs:comment "The LBR iiwa is the world’s first series-produced sensitive, and therefore HRC-compatible, robot. LBR stands for “Leichtbauroboter” (German for lightweight robot), iiwa for “intelligent industrial work assistant”. This signals the beginning of a new era in industrial, sensitive robotics – and lays the foundations for innovative and sustainable production processes. For the first time, humans and robots can work together on highly sensitive tasks in close cooperation. This opens up the possibility of new applications and the way is paved for greater cost-effectiveness and utmost efficiency. The collaborative and sensitive LBR iiwa robot is available in two versions with payload capacities of 7 and 14 kilograms."@en ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/robot/lbr-iiwa-7R800.jpg> ;
+	star2:locatedIn plant:Pilotfabrik ;
+	star2:isEquippedWithActuator actuator:Schunk-EGA-0001 ;
+	star2:isInstanceOf robot:kuka-lbr-iiwa-7-r800 .
+
+robot:Fanuc-CR-7iA-001 a star2:Robot ;
+	rdfs:label "Fanuc CR-7iA #1"@en ;
+	rdfs:comment "I’m small, flexible and can work right by your side. I take care of light (up to 7 kg) but tedious and repetitive, manual tasks that include different types of material handling, which would otherwise consume an immense amount of your time. Depending on your need, I can be programmed to perform entire production flows that require steady and reliable quality levels. These tasks can range from small parts assembly, to highly repetitive tasks such as picking and placing items from one place to another. My long reach of 911 mm makes me the ideal candidate for machine tending and palletizing applications."@en ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/robot/fanuc-CR-7iAL.jpg> ;
+	star2:locatedIn plant:Pilotfabrik ;
+	star2:isInstanceOf robot:fanuc-cr7ia .
+
+robot:ABBIRB2600-M2004-0001 a star2:Robot ;
+	rdfs:label "ABB IRB 2600 M2004 #1"@en ;
+	rdfs:comment "The IRB 2600 is the second model in the sharp generation range with enhanced and new capabilities. It is a compact robot with a high payload capacity. The design has been optimized for targeted applications like arc welding, material handling and machine tending."@en ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/robot/abb-irb-2600-M2004.jpg> ;
+	star2:locatedIn plant:Pilotfabrik ;
+	star2:isInstanceOf robot:ABBIRB2600-M2004 .
+
+robot:Neobotix-MP-400-0001 a star2:Robot ;
+	rdfs:label "Neobotix MP-400 #1"@en ;
+	rdfs:comment """The mobile robot MP-400 was designed for daily use in industrial applications. Its construction is based on the best elements of our well proven robots but also includes many innovative ideas.
+
+The MP-400's primary task is the flexible material transport in intralogistics. This small, agile robot can cover connections that cannot be realised with stationary conveyors or traditional AGVs.
+
+If required, the MP-400 can also easily be used in more demanding applications. Other possible tasks include mobile manipulation with an integrated robot arm or the whole field of service robotics research.""" ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/robot/neobotix-MP-400.jpg> ;
+	star2:locatedIn plant:Pilotfabrik ;
+	star2:isInstanceOf robot:Neobotix-MP-400 .
+
+robot:Neobotix-MP-400-0002 a star2:Robot ;
+	rdfs:label "Neobotix MP-400 #2"@en ;
+	rdfs:comment """The mobile robot MP-400 was designed for daily use in industrial applications. Its construction is based on the best elements of our well proven robots but also includes many innovative ideas.
+
+The MP-400's primary task is the flexible material transport in intralogistics. This small, agile robot can cover connections that cannot be realised with stationary conveyors or traditional AGVs.
+
+If required, the MP-400 can also easily be used in more demanding applications. Other possible tasks include mobile manipulation with an integrated robot arm or the whole field of service robotics research.""" ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/robot/neobotix-MP-400.jpg> ;
+	star2:locatedIn plant:Pilotfabrik ;
+	star2:isInstanceOf robot:Neobotix-MP-400 .
+
+robot:Franka-Emika-Panda-0001 a star2:Robot ;
+	rdfs:label "Franka Emika Panda #1"@en ;
+	rdfs:comment "Inspired by human agility and sense of touch, it is a sensitive and extraordinarily versatile power tool. With torque sensors in all seven axes, the arm skillfully and delicately manipulates objects, flawlessly accomplishing tasks you program it for."@en ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/robot/franka-emika-panda.jpg> ;
+	star2:locatedIn plant:Pilotfabrik ;
+	star2:isInstanceOf robot:Franka-Emika-Panda .
+
+
+#Actuators type
+
+actuator:Schunk-EGA a star2:EndEffectorType ;
+	rdfs:label "Schunk Gripper EGA"@en ;
+	rdfs:comment "Electric 2-finger parallel gripper with lightweight profile rail guide and adaptable servomotor. Optimal standard solution for applications with large workpiece geometries. Universal application in clean to slightly dirty environments, e.g. in the machine and plant building industry, assembly, and handling sectors as well as in the automotive industry."@en ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/actuator/schunk-ega.jpg> ;
+	star2:offersHandlingFunction hf:Pick , hf:Place .
+
+actuator:Robotiq-Gripper-HandE a star2:EndEffectorType ;
+	rdfs:label "Robotiq Gripper Hand-E"@en ;
+	rdfs:comment "Robotiq’s Hand-E Gripper is simple to integrate in your production environment and easy for workers of all skill levels to use—no robotics experience required.Install your adaptive gripper in just a few minutes, thanks to our Plug + Play gripper kits. Then use our intuitive software interface to program directly on your robot’s touchscreen."@en ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/actuator/robotiq-gripper-handE.png> ;
+	star2:offersHandlingFunction hf:Pick , hf:Place .
+
+
+actuator:Robotiq-Gripper-2F-85 a star2:EndEffectorType ;
+	rdfs:label "Robotiq Gripper 2F-85"@en ;
+	rdfs:comment "The 2F-85 and 2F-140 Adaptive Grippers are the world’s best-selling grippers for collaborative robots. Use them to accomplish a complete lineup of applications with a fast time-to-production—no robotics expertise required. They’re key to a highly flexible and reliable robotic cell. "@en ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/actuator/robotiq-gripper-2F-85.png> ;
+	star2:offersHandlingFunction hf:Pick , hf:Place .
+
+
+# Actuators
+
+actuator:Schunk-EGA-0001 a star2:EndEffector ;
+	rdfs:label "Schunk Gripper EGA #1"@en ;
+	rdfs:comment "Electric 2-finger parallel gripper with lightweight profile rail guide and adaptable servomotor. Optimal standard solution for applications with large workpiece geometries. Universal application in clean to slightly dirty environments, e.g. in the machine and plant building industry, assembly, and handling sectors as well as in the automotive industry."@en ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/actuator/schunk-ega.jpg> ;
+	star2:locatedIn plant:Pilotfabrik ;
+	star2:isInstanceOf robot:Schunk-EGA .
+
+actuator:Robotiq-Gripper-HandE-0001 a star2:EndEffector ;
+	rdfs:label "Robotiq Gripper Hand-E #1"@en ;
+	rdfs:comment "Robotiq’s Hand-E Gripper is simple to integrate in your production environment and easy for workers of all skill levels to use—no robotics experience required.Install your adaptive gripper in just a few minutes, thanks to our Plug + Play gripper kits. Then use our intuitive software interface to program directly on your robot’s touchscreen."@en ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/actuator/robotiq-gripper-handE.png> ;
+	star2:isInstanceOf robot:Robotiq-Gripper-HandE .
+
+actuator:Robotiq-Gripper-2F-85-0001 a star2:EndEffector ;
+	rdfs:label "Robotiq Gripper 2F-85 #1"@en ;
+	rdfs:comment "The 2F-85 and 2F-140 Adaptive Grippers are the world’s best-selling grippers for collaborative robots. Use them to accomplish a complete lineup of applications with a fast time-to-production—no robotics expertise required. They’re key to a highly flexible and reliable robotic cell. "@en ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/actuator/robotiq-gripper-2F-85.png> ;
+	star2:locatedIn plant:Pilotfabrik ;
+	star2:isInstanceOf robot:Robotiq-Gripper-2F-85 .
+
+actuator:Panasonic-PT-RZ660-0001 a star2:Resource ;
+	rdfs:label "Panasonic PT-RZ660 #1"@en ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/projector/panasonic-PT-RZ660.jpg> ;
+	star2:locatedIn plant:Pilotfabrik .
+
+actuator:Panasonic-ET-MH17-Mirror-Head-001 a star2:Resource ;
+	rdfs:label "Panasonic ET-MH17 Mirror Head #1"@en ;
+	rdfs:comment """Designed for professional show integrators, the series is available in four models (ET-MH14, ET-MH15, ET-MH17 and ET-MH18) suitable for Panasonic projectors from 6,200 to 30,000 lumens, making it ideal for both rental and touring events.
+
+The extendable Mirror Head has a maximum pan rotation of 180 degrees and a tilt rotation of 90 degrees. It can be set to move either rapidly or slowly to project pictures, animations, videos and text on to any surface, whether it be moving or static."""@en ;
+	foaf:depiction <http://data.ifs.tuwien.ac.at/star2/images/projector/panasonic-ET-MH17-Mirror-Head.jpg> ;
+	star2:locatedIn plant:Pilotfabrik .
+
+
+# Sensors
+
+sensor:Profactor-3D-Camera-0001 a star2:Sensor ;
+	rdfs:label "Profactor 3D Camera #1"@en ;
+	star2:locatedIn plant:Pilotfabrik .
+
+
+# Skills
+
+skill:Supply a star2:Skill ;
+	rdfs:label "Supply"@en ;
+	rdfs:comment "Supply service to deliver raw material or products from other plants"@en .
+
+skill:Assemble a star2:Skill ;
+	rdfs:label "Assemble"@en ;
+	rdfs:comment "Assemble service to assemble (join) wokpieces together (part to product)"@en ;
+	star2:hasFirstSkillStep astep:1 .
+
+astep:1 col:index "1"^^xsd:int ;
+	star2:isOfHandlingFunction hf:Move ;
+	star2:hasNextStep astep:2 .
+
+astep:2 col:index "2"^^xsd:int ;
+	star2:isOfHandlingFunction hf:Approach ;
+	star2:hasNextStep astep:3 .
+
+astep:3 col:index "3"^^xsd:int ;
+	star2:isOfHandlingFunction hf:Pick ;
+	star2:hasNextStep astep:4 .
+
+astep:4 col:index "4"^^xsd:int ;
+	star2:isOfHandlingFunction hf:Depart ;
+	star2:hasNextStep astep:5 .
+
+astep:5 col:index "5"^^xsd:int ;
+	star2:isOfHandlingFunction hf:Move ;
+	star2:hasNextStep astep:6 .
+
+astep:6 col:index "6"^^xsd:int ;
+	star2:isOfHandlingFunction hf:Approach ;
+	star2:hasNextStep astep:7 .
+
+astep:7 col:index "7"^^xsd:int ;
+	star2:isOfHandlingFunction hf:Mount ;
+	star2:hasNextStep astep:8 .
+
+astep:8 col:index "8"^^xsd:int ;
+	star2:isOfHandlingFunction hf:Depart ;
+	star2:hasNextStep astep:9 .
+
+astep:9 col:index "9"^^xsd:int ;
+	star2:isOfHandlingFunction hf:Retract .
+
+skill:Inspect a star2:Skill ;
+	rdfs:label "Inspect"@en ;
+	rdfs:comment "Inspect service to check quality of a product"@en .
+
+skill:Buffer a star2:Skill ;
+	rdfs:label "Buffer"@en ;
+	rdfs:comment "Buffer service to provide buffer for products (temporary storage)"@en .
+
+skill:Disassemble a star2:Skill ;
+	rdfs:label "Disassemble"@en ;
+	rdfs:comment "Disassemble service to remove part from a product"@en .
+
+skill:Drill a star2:Skill ;
+	rdfs:label "Drill"@en ;
+	rdfs:comment "Drill service to make holes into products"@en .
+
+skill:Engrave a star2:Skill ;
+	rdfs:label "Engrave"@en ;
+	rdfs:comment "Engrave service to perform engraving (e.g., with a laser cutter)"@en .
+
+skill:Fasten a star2:Skill ;
+	rdfs:label "Fasten"@en ;
+	rdfs:comment "Fasten service to join workpieces with a fastener (e.g., screw)"@en .
+
+skill:Retrieve a star2:Skill ;
+	rdfs:label "Retrieve"@en ;
+	rdfs:comment "Retrieve service to retrieve products from storage"@en .
+
+skill:Stack a star2:Skill ;
+	rdfs:label "Stack"@en ;
+	rdfs:comment "Stack service to put one wokpiece on top of another"@en .
+
+skill:Stock a star2:Skill ;
+	rdfs:label "Stock"@en ;
+	rdfs:comment "Stock service to put material needed for production back to CPPU"@en .
+
+skill:Store a star2:Skill ;
+	rdfs:label "Store"@en ;
+	rdfs:comment "Store service to store end products for given production line"@en .
+
+skill:Transport a star2:Skill ;
+	rdfs:label "Transport"@en ;
+	rdfs:comment "Transport service to move products"@en .
+
+skill:Wait a star2:Skill ;
+	rdfs:label "Wait"@en ;
+	rdfs:comment "Wait service to pause for given amount of time"@en .
+
+
+# Handling Function
+
+hf:Move a star2:HandlingFunction ;
+	rdfs:label "Move"@en ;
+	star2:isRequiredInSkill skill:Assemble .
+
+hf:Turn a star2:HandlingFunction ;
+	rdfs:label "Turn"@en .
+
+hf:Pivot a star2:HandlingFunction ;
+	rdfs:label "Pivot"@en .
+
+hf:Arrange a star2:HandlingFunction ;
+	rdfs:label "Arrange"@en .
+
+hf:Position a star2:HandlingFunction ;
+	rdfs:label "Position"@en .
+
+hf:MoveToProduct a star2:HandlingFunction ;
+	rdfs:label "Move to product"@en .
+
+hf:Approach a star2:HandlingFunction ;
+	rdfs:label "Approach"@en ;
+	star2:isRequiredInSkill skill:Assemble .
+
+hf:Pick a star2:HandlingFunction ;
+	rdfs:label "Pick"@en ;
+	star2:isRequiredInSkill skill:Assemble .
+
+hf:Depart a star2:HandlingFunction ;
+	rdfs:label "Depart"@en ;
+	star2:isRequiredInSkill skill:Assemble .
+
+hf:Place a star2:HandlingFunction ;
+	rdfs:label "Place"@en .
+
+hf:Retract a star2:HandlingFunction ;
+	rdfs:label "Retract"@en ;
+	star2:isRequiredInSkill skill:Assemble .
+
+hf:ExecMotion a star2:HandlingFunction ;
+	rdfs:label "Execute motion"@en .
+
+hf:Mount a star2:HandlingFunction ;
+	rdfs:label "Mount"@en ;
+	star2:isRequiredInSkill skill:Assemble .
+
+hf:Project a star2:HandlingFunction ;
+	rdfs:label "Project"@en .
+
+hf:IdentifyObject a star2:HandlingFunction ;
+	rdfs:label "Identify objects"@en .
+
+hf:TrackHuman a star2:HandlingFunction ;
+	rdfs:label "Track humans"@en .
+
+hf:Clamp a star2:HandlingFunction ;
+	rdfs:label "Clamp"@en .
+
+hf:Declamp a star2:HandlingFunction ;
+	rdfs:label "Declamp"@en .
+
+hf:Intake a star2:HandlingFunction ;
+	rdfs:label "Intake"@en .
