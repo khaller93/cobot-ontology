@@ -19,6 +19,7 @@ The key approach is the construction of a knowledge graph, which begins with des
 domain ontology and integrating heterogeneous data into a unified representation.
 
 ## Description
+
 The scope of this ontology ranges from manufactured products, manufacturing processes to robots and
 equipment used in those processes. 
 
@@ -42,6 +43,12 @@ Franka Emika `Robot` at the pilot factory can perform `Handling Functions` such 
 not sufficient to perform the aforementioned pick & place `Skill`. The `Robot` must be equipped with an `End Effector`
 that provides pick and place among other `Handling Functions`. `Grippers` (e.g. Robotiq 2F-85) and vacuum systems
 (e.g. Robotiq Airpick) are examples for such `End Effectors`.
+
+## Data
+
+Sample data has been curated for this ontology, which can be found in the [data](data) folder. The [data/pilot-data.ttl](data/pilot-data.ttl)
+data originates from interviews with stakeholders in the pilot factory. The [data/coboticsworld-cobots.trig](data/coboticsworld-cobots.trig)
+data originates from scrapping information from the now disfunct website coboticsworld.com.
 
 ## Citation
 
