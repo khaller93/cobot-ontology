@@ -5,6 +5,7 @@
 @prefix astep: <http://data.ifs.tuwien.ac.at/star2/instance/skill/Assemble/step/> .
 @prefix hf: <http://data.ifs.tuwien.ac.at/star2/instance/handlingfunction/> .
 @prefix sensor: <http://data.ifs.tuwien.ac.at/star2/instance/sensor/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 @prefix star2: <http://data.ifs.tuwien.ac.at/star2/ontology#> .
 
