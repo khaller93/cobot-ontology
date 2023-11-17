@@ -53,10 +53,10 @@ data originates from scrapping information from the now disfunct website cobotic
 ## Citation
 
 ```bibtex
-@masterthesis{haller23,
+@masterthesis{haller24,
   title={Semantics-Based Exploratory Search on Manufacturing Knowledge},
   author={Kevin Haller},
-  year={2023},
+  year={open :>, hopefully 2024},
   school={TU Wien}
 }
 ```
